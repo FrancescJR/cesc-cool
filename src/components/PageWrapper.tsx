@@ -1,7 +1,7 @@
 import React from 'react';
-import styled, {StyledComponentBase} from "styled-components";
+import styled from "styled-components";
 import Menu from "./menu/Menu";
-import MainContent from "./MainContent";
+import MainContent from "./content/MainContent";
 
 interface backgroundProp {
     backgroundImageIndex: number;
@@ -11,16 +11,19 @@ const PageWrapperDiv = styled.div`
     position: relative;
 `
 
+const PageContentWrapperDiv = styled.div`
 
-const PageWrapperCenteredDiv = styled.div`    
-    margin: 0 auto; #since there it no header 3 em on top;
-    min-height: 100vh;
-    max-width: 100vh; 
+    @media ( min-width: 1440px ) {
+        margin-left: 300px;
+    }
+    
 `
 
-const PageContentWrapperDiv = styled.div`
-padding-top:24px;
-    
+const PageWrapperCenteredDiv = styled.div`   
+    padding: 5em 1em 0;
+    margin: 0em auto;
+    min-height: 100vh;
+    max-width: 922px; 
 `
 
 const BackgroundPhoto = styled.div`
@@ -34,7 +37,7 @@ const BackgroundPhoto = styled.div`
 `
 
 interface pageWrapperProps {
-
+    breakpoint: string
 }
 
 interface pageWrapperState {
@@ -48,11 +51,11 @@ export default function PageWrapper (props: pageWrapperProps) {
                 <PageWrapperDiv>
                     <BackgroundPhoto backgroundImageIndex={backgroundImageIndex} />
                     <Menu />
-                    <PageWrapperCenteredDiv>
-                        <PageContentWrapperDiv>
+                    <PageContentWrapperDiv>
+                        <PageWrapperCenteredDiv>
                             <MainContent/>
-                        </PageContentWrapperDiv>
-                    </PageWrapperCenteredDiv>
+                        </PageWrapperCenteredDiv>
+                    </PageContentWrapperDiv>
 
                 </PageWrapperDiv>
 

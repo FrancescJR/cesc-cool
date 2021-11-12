@@ -7,6 +7,12 @@ interface State {
     breakpoint: string;
 }
 
+export const BREAKPOINT_XL = 'xl';
+export const BREAKPOINT_L = 'l';
+export const BREAKPOINT_M = 'm';
+export const BREAKPOINT_S = 's';
+export const BREAKPOINT_XS = 'xs';
+
 class Site extends React.Component<any, State> {
 
     constructor(props:any) {
@@ -18,14 +24,16 @@ class Site extends React.Component<any, State> {
 
     private getScreenSize = () => {
         const { innerWidth } = window;
-        let breakpoint = 'xs';
+        let breakpoint = BREAKPOINT_XS;
 
-        if (innerWidth >= 1024) {
-            breakpoint = 'lg';
+        if (innerWidth >= 1440) {
+            breakpoint = BREAKPOINT_XL;
+        } else if (innerWidth >= 1024) {
+            breakpoint = BREAKPOINT_L;
         } else if (innerWidth >= 768) {
-            breakpoint = 'md';
+            breakpoint = BREAKPOINT_M;
         } else if (innerWidth >= 400) {
-            breakpoint = 'sm';
+            breakpoint = BREAKPOINT_S;
         }
 
         return breakpoint;
@@ -33,7 +41,7 @@ class Site extends React.Component<any, State> {
 
     public render() {
         const {breakpoint} = this.state;
-        return(<PageWrapper />);
+        return(<PageWrapper breakpoint={this.state.breakpoint} />);
     }
 }
 
