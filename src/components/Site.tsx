@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import Menu from "./menu/Menu";
 import MainContent from "./content/MainContent";
+import RouterMenu from "./menu/RouterMenu";
 
 interface backgroundProp {
     backgroundImageIndex: number;
@@ -12,11 +13,9 @@ const PageWrapperDiv = styled.div`
 `
 
 const PageContentWrapperDiv = styled.div`
-
     @media ( min-width: 1440px ) {
-        margin-left: 300px;
-    }
-    
+        margin-left: 284px;
+    }  
 `
 
 const PageWrapperCenteredDiv = styled.div`   
@@ -32,33 +31,29 @@ const BackgroundPhoto = styled.div`
     position: absolute;
     width: 100%;
     z-index: -1;
-    background-image: url(./assets/background${(props:backgroundProp) => props.backgroundImageIndex}.jpg);
-    
+    background-image: url(./assets/background${(props:backgroundProp) => props.backgroundImageIndex}.jpg);    
 `
 
-interface pageWrapperProps {
-    breakpoint: string
+export interface siteProps {
+    route: string
 }
 
-interface pageWrapperState {
 
-}
-
-export default function PageWrapper (props: pageWrapperProps) {
+export default function Site (props: siteProps) {
     let backgroundImageIndex = Math.floor(Math.random() * 8) + 1
 
         return (
+            <div>
+                <Menu />
                 <PageWrapperDiv>
                     <BackgroundPhoto backgroundImageIndex={backgroundImageIndex} />
-                    <Menu />
                     <PageContentWrapperDiv>
                         <PageWrapperCenteredDiv>
-                            <MainContent/>
+                            <MainContent route={props.route}/>
                         </PageWrapperCenteredDiv>
                     </PageContentWrapperDiv>
-
                 </PageWrapperDiv>
-
+            </div>
         );
 
 }

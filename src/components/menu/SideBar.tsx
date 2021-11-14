@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import RouterMenu from "./RouterMenu";
 
 const SidebarWrapper = styled.div`
     background: #fff;
@@ -8,20 +9,19 @@ const SidebarWrapper = styled.div`
     top: 0;
     left:0;
     right:auto;
-    bottom:0;
-
-    
+    bottom:0;    
 `
 
 const SidebarTopWrapper = styled.div`
-    background: #efefef;
-   
+    background: #efefef;   
     height: 480px;
 `
 
 const SideBarTopContentWrapper = styled.div`
  padding: 1em;
+`
 
+const SideBarBottomWrapper = styled.div`
 `
 
 const AvatarDiv = styled.div`
@@ -55,6 +55,9 @@ export default function SideBar (props: sideBarProps) {
                         <p>Made for you with ❤️ to dissect me like an open book.</p>
                     </SideBarTopContentWrapper>
                 </SidebarTopWrapper>
+            <SideBarBottomWrapper>
+                <RouterMenu/>
+            </SideBarBottomWrapper>
         </SidebarWrapper>
     );
 
