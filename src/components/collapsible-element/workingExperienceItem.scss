@@ -1,0 +1,121 @@
+$small: 400px;
+
+.working-experience {
+  width: 100%;
+
+  //@media screen and (min-width: $medium) {
+  //  //do Smth
+  //}
+  a {
+    text-decoration: none;
+    color: #444444;
+  }
+
+  .time-labels {
+    @media screen and (max-width: $small) {
+      width: 15%;
+      margin-right:10px;
+    }
+    text-align: right;
+    padding-top:5px;
+    font-size: 0.75em;
+    width: 12%;
+    float:left;
+    &.open{
+      padding-top:15px;
+    }
+  }
+
+  .point-in-time {
+    cursor: pointer;
+    width: 8%;
+    padding: 12px 25px;
+    @media screen and (max-width: $small) {
+      width: 16%;
+    }
+  }
+
+
+  .time-line-pre{
+    width:4%;
+    @media screen and (max-width: $small) {
+      width: 8%;
+    }
+    float: left;
+  }
+  .time-line {
+    width:4%;
+    @media screen and (max-width: $small) {
+      width: 8%;
+    }
+    float: left;
+    margin-left: 1px;
+    position:relative;
+    height:auto;
+    &.open {
+      border-left: 1px solid #000;
+      margin-top:20px;
+      margin-bottom: 20px;
+    }
+
+    .closed-time-line {
+      position:absolute;
+      border-top: 1px solid #000;
+      min-width:42px;
+      top:12px;
+      left: -13px;
+    }
+  }
+
+  .working-experience-lite {
+    background-color: #f4f4f4;
+    display:flex;
+    padding: 5px;
+
+    .heading-middle-part {
+      @media screen and (max-width: $small) {
+        width: 70%;
+        margin-left:10px;
+      }
+      width:60%;
+      float: left;
+      clear:both;
+      .title-span {
+        font-weight: bold;
+        font-size:1.15em;
+      }
+      a {
+        font-size:0.75em;
+      }
+    }
+    .location {
+      @media screen and (max-width: $small) {
+        width: 0%;
+        display: none;
+      }
+      width:18%;
+      float:left;
+      text-align: right;
+      padding-top: 13px;
+    }
+  }
+
+  .working-experience-description {
+    display:flex;
+    padding: 5px;
+    .main-content {
+      padding: 5px 0;
+      font-size: 0.85em;
+      width:72%;
+      float: left;
+    }
+    .time-labels {
+      position:relative;
+      .from-date {
+        position:absolute;
+        bottom: 5px;
+        right: 0;
+      }
+    }
+  }
+}

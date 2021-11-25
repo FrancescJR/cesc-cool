@@ -10,6 +10,7 @@ const SidebarWrapper = styled.div`
     left:0;
     right:auto;
     bottom:0;    
+    overflow: scroll;
 `
 
 const SidebarTopWrapper = styled.div`

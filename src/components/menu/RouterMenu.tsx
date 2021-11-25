@@ -14,7 +14,7 @@ const navLinkStyles = (isActive:menuItemProps) => ({
     'display': 'block',
     'padding': '15px',
     'background': isActive.isActive ?
-        'url(./assets/background8.jpg)':
+        'url(./assets/background1.jpg)':
         '#FFF',
     'color': 'black',
     'textDecoration': 'none',
@@ -26,16 +26,12 @@ const navLinkStyles = (isActive:menuItemProps) => ({
 
 
 export default function RouterMenu() {
-    let navLink =  <NavLink  to={"/about"} />
-    console.log(navLink.type);
-    let stylesForNavLink =  navLinkStyles(navLink.props);
     return (
         <MenuDiv>
             <NavLink
-                to={"/about"}
+                to={"/"}
                 style={navLinkStyles}
             >
-
                 About Me
             </NavLink>
             <NavLink
@@ -43,6 +39,42 @@ export default function RouterMenu() {
                 style={navLinkStyles}
             >
                 Working Experience
+            </NavLink>
+            <NavLink
+                to={"/side-hustle"}
+                style={navLinkStyles}
+            >
+                Side Hustle
+            </NavLink>
+            <NavLink
+                to={"/skills"}
+                style={navLinkStyles}
+            >
+                Skills
+            </NavLink>
+            <NavLink
+                to={"/books"}
+                style={navLinkStyles}
+            >
+                Books
+            </NavLink>
+            <NavLink
+                to={"/blog"}
+                style={navLinkStyles}
+            >
+                Blog
+            </NavLink>
+            <NavLink
+                to={"/instagram"}
+                style={navLinkStyles}
+            >
+                Instagram
+            </NavLink>
+            <NavLink
+                to={"/education"}
+                style={navLinkStyles}
+            >
+                Education
             </NavLink>
         </MenuDiv>
     );

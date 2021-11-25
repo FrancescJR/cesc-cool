@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import Menu from "./menu/Menu";
-import MainContent from "./content/MainContent";
-import RouterMenu from "./menu/RouterMenu";
+import Menu from "../components/menu/Menu";
+import MainContent from "./MainContent";
 
 interface backgroundProp {
     backgroundImageIndex: number;
