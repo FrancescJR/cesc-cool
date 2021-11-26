@@ -12,10 +12,10 @@ interface TechProjectProps {
 export default function TechProject(props: TechProjectProps){
     let title = props.link ?
         <a href={props.link} target="_blank" rel="noreferrer">{props.title}</a> :
-        props.title;
+        <div className={'no-link-title'}>{props.title}</div>;
 
     return (
-        <div>
+        <div className={'tech-project-pill'}>
             <div className={'tech-project-header'}>
                 <div className={'tech-project-title'}>{title}</div>
                 <div className={'tech-project-technologies'}>{props.technologies.map(function(technologyName:string){

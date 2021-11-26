@@ -9,7 +9,8 @@ interface TechBuzzWordProps {
 
 
 export default function TechBuzzWord(props: TechBuzzWordProps) {
-
+console.log(props.indexDictionary);
+console.log("here");
     let name = TECHNOLOGIES[props.indexDictionary].name;
 
     return (

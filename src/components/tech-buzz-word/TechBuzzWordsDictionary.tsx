@@ -1,10 +1,15 @@
 import React from 'react';
 
+export const PHP = 'PHP';
+export const TYPESCRIPT = 'Typescript';
+export const JAVASCRIPT = 'Javascript';
 export const TERRAFORM = 'Terraform';
 export const REACT = 'React'
-export const TYPESCRIPT = 'Typescript';
-export const PHP = 'PHP';
-export const GITHUB_ACTION = 'GitHub Action';
+export const SCSS = 'Sassy CSS';
+export const HTML = 'HTML';
+
+
+export const GITHUB_ACTION = 'GitHub Actions';
 export const DOCKER = 'Docker';
 
 interface TechBuzzWordScaffolding {
@@ -20,6 +25,9 @@ export const TECHNOLOGIES: {[key:string] : TechBuzzWordScaffolding}  = {
     },
     [TYPESCRIPT] : {
         'name': TYPESCRIPT
+    },
+    [JAVASCRIPT] : {
+        'name': JAVASCRIPT
     },
     [GITHUB_ACTION] : {
         'name': GITHUB_ACTION

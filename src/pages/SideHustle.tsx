@@ -46,7 +46,8 @@ export default function SideHustle() {
             <TechProject
                 title={'Eniltrex infra'}
                 technologies={[TERRAFORM, GITHUB_ACTION ]} >
-                <p>The whole infra for the business that supports all the above.</p>
+                <p>The whole infra for the business that supports all the above. Sorry it's a private project. There's no link.
+                Just to say that we have everything "terraformed" and automatized. DevOps power.</p>
                 <p>Also with CI/CD with github actions.</p>
             </TechProject>
             <TechProject
