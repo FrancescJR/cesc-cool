@@ -1,11 +1,12 @@
 import React from 'react';
+import MainContentTitle from "../components/maincontent/MainContentTitle";
 
 
 
 export default function Languages() {
     return (
         <div>
-            <h4>Languages</h4>
+            <MainContentTitle title={'Languages'} />
             <h5>English</h5>
             <p>Well, probably this doesn't look as it is written by a professional writer, not a native person, and the
                 main reason is that I'm neither of them.</p>
@@ -13,8 +14,8 @@ export default function Languages() {
             <h5>Spanish</h5>
             <p>Ay caramba! xD</p>
             <p>Creo que he visto bastante televisión española para poder decir que soy nativo.</p>
-            <p>Quizà no me vereis escribiendo con acentos porqué uso un teclado americano y tengo que acordarme de memória
-            donde estan todas las tildes. Y probablemente podreis identificar alguna que otra falta de ortografìa.
+            <p>Quizá no me vereis escribiendo con acentos porqué uso un teclado americano y tengo que acordarme de memória
+            donde estan todas las tildes. Y probablemente podreis identificar alguna que otra falta ortográfica.
                 Otra razón por la cual normalmente escribo sin acentos, así eso queda mas disimulado.</p>
             <h5>Japanese</h5>
             <p>これは本当に私の書いたテキストです。五年間日本に住んでいましたけど日本語を少し使いませんでした。あまり学ばせんでした。

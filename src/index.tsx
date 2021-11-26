@@ -22,7 +22,7 @@ ReactDOM.render(
           <Routes>
               <Route path={"/"} element={<Site route={ABOUT} />} />
               <Route path={"/" + WORKING_EXPERIENCE} element={<Site route={WORKING_EXPERIENCE} />} />
-              <Route path={"/" + SIDE_HUSTLE} element={<Site route={SKILLS} />} />
+              <Route path={"/" + SIDE_HUSTLE} element={<Site route={SIDE_HUSTLE} />} />
               <Route path={"/" + SKILLS} element={<Site route={SKILLS} />} />
               <Route path={"/" + BOOKS} element={<Site route={BOOKS} />} />
               <Route path={"/" + INTERNET_EXPOSURE} element={<Site route={INTERNET_EXPOSURE} />} />

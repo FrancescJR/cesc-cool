@@ -1,11 +1,12 @@
 import React from 'react';
+import MainContentTitle from "../components/maincontent/MainContentTitle";
 
 
 
 export default function InternetExposure() {
     return (
         <div>
-            <h3>Internet exposure</h3>
+            <MainContentTitle title={'Public me'} />
             <h4>Social Media</h4>
             <p>I am not much active on social media. I reply linkedIn messages and I post from time to time
             on Instagram. Facebook is there to keep some contacts, but a part from that is like I don't have it.</p>
@@ -33,10 +34,6 @@ export default function InternetExposure() {
                 Penzu will be about some bad coding practices that I've been seeing among the years. This book
                 will be intended for technical people though, with code examples, and written as a satire and also
                 as autocriticism.</p>
-
-            <br/>
-            <p>I'm awesome when I'm awesome. I love working as much working as I love not working.</p>
-
         </div>
     );
 }

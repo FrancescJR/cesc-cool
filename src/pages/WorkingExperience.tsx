@@ -1,15 +1,12 @@
 import React from 'react';
 import WorkingExperienceItem from "../components/collapsible-element/WorkingExperienceItem";
+import MainContentTitle from "../components/maincontent/MainContentTitle";
 
-import './listPage.scss'
 
 export default function WorkingExperience() {
     return (
         <div>
-            <div className={'header'}>
-                <div className={'empty-space'}/>
-                <h2 className={'list-title'}>Working Experience</h2>
-            </div>
+            <MainContentTitle title={'Working Experience'} />
             <div
             >
                 <WorkingExperienceItem

@@ -1,15 +1,16 @@
 import React from 'react';
 import Book from "../components/book/Book";
+import MainContentTitle from "../components/maincontent/MainContentTitle";
 
 
 
 export default function Books() {
     return (
         <div>
-
-            <h4>Books</h4>
+            <MainContentTitle title={'Books'} />
             <p> This is a list of technical books that I have read and some of them re-read, that helped me shape
                 my beliefs and my points of views of what IT on every company -big, small, start-up etc- should be.</p>
+            <p>You can consider that part of my education.</p>
             <h5>Domain Driven Design</h5>
             <Book title={'Domain-Driven Design: Tackling Complexity in the Heart of Software'} author={'Eric Evans'}
                   amazonLink={'https://www.amazon.com/gp/product/B00794TAUG/ref=kinw_myk_ro_title'}>

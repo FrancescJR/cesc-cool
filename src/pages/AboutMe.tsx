@@ -1,11 +1,12 @@
 import React from 'react';
+import MainContentTitle from "../components/maincontent/MainContentTitle";
 
 
 
 export default function AboutMe() {
     return (
         <div>
-            <h2>About Me</h2>
+            <MainContentTitle title={'About Me'} />
             <h5>Short story</h5>
             <p>Hello! It is most certainly a pleasure to meet you.</p>
             <p>I am an engineer born and raised in Barcelona and seasoned in Japan for 5 years. My major

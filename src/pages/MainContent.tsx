@@ -16,7 +16,7 @@ const PublicContentDiv = styled.div`
 width: auto;
 min-height: 40px;
 background: #fff;
-padding: 1.5em;
+padding: 1.5em 3.5em;
 margin-bottom: 2em;
     `;
 

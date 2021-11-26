@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import {ABOUT, WORKING_EXPERIENCE, SIDE_HUSTLE, SKILLS, BOOKS, EDUCATION, INTERNET_EXPOSURE, LANGUAGES} from "../../index";
+import {WORKING_EXPERIENCE, SIDE_HUSTLE, SKILLS, BOOKS, EDUCATION, INTERNET_EXPOSURE, LANGUAGES} from "../../index";
 
 const MenuDiv = styled.div`
 `
@@ -36,16 +36,16 @@ export default function RouterMenu() {
                 Working Experience
             </NavLink>
             <NavLink
-                to={"/" + SIDE_HUSTLE}
-                style={navLinkStyles}
-            >
-                Side Hustle
-            </NavLink>
-            <NavLink
                 to={"/" + SKILLS}
                 style={navLinkStyles}
             >
                 Skills
+            </NavLink>
+            <NavLink
+                to={"/" + SIDE_HUSTLE}
+                style={navLinkStyles}
+            >
+                Side Hustle
             </NavLink>
             <NavLink
                 to={"/" + BOOKS}
@@ -54,16 +54,16 @@ export default function RouterMenu() {
                 Books
             </NavLink>
             <NavLink
-                to={"/" + INTERNET_EXPOSURE}
-                style={navLinkStyles}
-            >
-                Internet Exposure
-            </NavLink>
-            <NavLink
                 to={"/" + EDUCATION}
                 style={navLinkStyles}
             >
                 Education
+            </NavLink>
+            <NavLink
+                to={"/" + INTERNET_EXPOSURE}
+                style={navLinkStyles}
+            >
+                Internet Exposure
             </NavLink>
             <NavLink
                 to={"/" + LANGUAGES}
