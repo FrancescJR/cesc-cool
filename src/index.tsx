@@ -11,9 +11,9 @@ export const WORKING_EXPERIENCE = 'working_experience';
 export const SIDE_HUSTLE = 'side_hustle'
 export const SKILLS = 'skills';
 export const BOOKS = 'books';
-export const BLOG = 'blog';
-export const INSTAGRAM = 'instagram';
+export const INTERNET_EXPOSURE = 'internet-exposure';
 export const EDUCATION = 'education';
+export const LANGUAGES = 'languages';
 
 
 ReactDOM.render(
@@ -21,13 +21,13 @@ ReactDOM.render(
       <BrowserRouter>
           <Routes>
               <Route path={"/"} element={<Site route={ABOUT} />} />
-              <Route path={"/working-experience"} element={<Site route={WORKING_EXPERIENCE} />} />
-              <Route path={"/side-hustle"} element={<Site route={SKILLS} />} />
-              <Route path={"/skills"} element={<Site route={SKILLS} />} />
-              <Route path={"/books"} element={<Site route={BOOKS} />} />
-              <Route path={"/blog"} element={<Site route={BLOG} />} />
-              <Route path={"/instagram"} element={<Site route={INSTAGRAM} />} />
-              <Route path={"/education"} element={<Site route={EDUCATION} />} />
+              <Route path={"/" + WORKING_EXPERIENCE} element={<Site route={WORKING_EXPERIENCE} />} />
+              <Route path={"/" + SIDE_HUSTLE} element={<Site route={SKILLS} />} />
+              <Route path={"/" + SKILLS} element={<Site route={SKILLS} />} />
+              <Route path={"/" + BOOKS} element={<Site route={BOOKS} />} />
+              <Route path={"/" + INTERNET_EXPOSURE} element={<Site route={INTERNET_EXPOSURE} />} />
+              <Route path={"/" + EDUCATION} element={<Site route={EDUCATION} />} />
+              <Route path={"/" + LANGUAGES} element={<Site route={LANGUAGES} />} />
           </Routes>
       </BrowserRouter>
   </React.StrictMode>,

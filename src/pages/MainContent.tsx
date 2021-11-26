@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {siteProps} from "./Site";
-import {ABOUT, WORKING_EXPERIENCE, SIDE_HUSTLE, SKILLS, BOOKS, EDUCATION, BLOG, INSTAGRAM} from "../index";
+import {ABOUT, WORKING_EXPERIENCE, SIDE_HUSTLE, SKILLS, BOOKS, EDUCATION, INTERNET_EXPOSURE, LANGUAGES} from "../index";
 
 import WorkingExperience from "./WorkingExperience";
 import AboutMe from "./AboutMe";
@@ -9,8 +9,8 @@ import SideHustle from "./SideHustle";
 import Skills from "./Skills";
 import Books from "./Books";
 import Education from "./Education";
-import Blog from "./Blog";
-import Instagram from "./Instagram";
+import InternetExposure from "./InternetExposure";
+import Languages from "./Languages";
 
 const PublicContentDiv = styled.div`
 width: auto;
@@ -45,16 +45,16 @@ export default function MainContent(props: siteProps) {
             contentToRender = <Books/>;
             break;
         }
-        case BLOG: {
-            contentToRender = <Blog/>;
-            break;
-        }
-        case INSTAGRAM: {
-            contentToRender = <Instagram/>;
+        case INTERNET_EXPOSURE: {
+            contentToRender = <InternetExposure/>;
             break;
         }
         case EDUCATION: {
             contentToRender = <Education/>;
+            break;
+        }
+        case LANGUAGES: {
+            contentToRender = <Languages/>;
             break;
         }
         default: {

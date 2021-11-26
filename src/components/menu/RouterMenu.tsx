@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import {ABOUT, WORKING_EXPERIENCE, SIDE_HUSTLE, SKILLS, BOOKS, EDUCATION, INTERNET_EXPOSURE, LANGUAGES} from "../../index";
 
 const MenuDiv = styled.div`
 `
@@ -29,52 +30,46 @@ export default function RouterMenu() {
     return (
         <MenuDiv>
             <NavLink
-                to={"/"}
-                style={navLinkStyles}
-            >
-                About Me
-            </NavLink>
-            <NavLink
-                to={"/working-experience"}
+                to={"/" + WORKING_EXPERIENCE}
                 style={navLinkStyles}
             >
                 Working Experience
             </NavLink>
             <NavLink
-                to={"/side-hustle"}
+                to={"/" + SIDE_HUSTLE}
                 style={navLinkStyles}
             >
                 Side Hustle
             </NavLink>
             <NavLink
-                to={"/skills"}
+                to={"/" + SKILLS}
                 style={navLinkStyles}
             >
                 Skills
             </NavLink>
             <NavLink
-                to={"/books"}
+                to={"/" + BOOKS}
                 style={navLinkStyles}
             >
                 Books
             </NavLink>
             <NavLink
-                to={"/blog"}
+                to={"/" + INTERNET_EXPOSURE}
                 style={navLinkStyles}
             >
-                Blog
+                Internet Exposure
             </NavLink>
             <NavLink
-                to={"/instagram"}
-                style={navLinkStyles}
-            >
-                Instagram
-            </NavLink>
-            <NavLink
-                to={"/education"}
+                to={"/" + EDUCATION}
                 style={navLinkStyles}
             >
                 Education
+            </NavLink>
+            <NavLink
+                to={"/" + LANGUAGES}
+                style={navLinkStyles}
+            >
+                Languages
             </NavLink>
         </MenuDiv>
     );

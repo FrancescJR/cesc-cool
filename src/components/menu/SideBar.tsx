@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import RouterMenu from "./RouterMenu";
+import Slogan from "../slogan/Slogan";
+import {NavLink} from "react-router-dom";
 
 const SidebarWrapper = styled.div`
     background: #fff;
@@ -10,16 +12,17 @@ const SidebarWrapper = styled.div`
     left:0;
     right:auto;
     bottom:0;    
-    overflow: scroll;
 `
 
 const SidebarTopWrapper = styled.div`
     background: #efefef;   
-    height: 480px;
+    height: 422px;
+
 `
 
 const SideBarTopContentWrapper = styled.div`
  padding: 1em;
+      min-width:284px;
 `
 
 const SideBarBottomWrapper = styled.div`
@@ -51,9 +54,13 @@ export default function SideBar (props: sideBarProps) {
         <SidebarWrapper>
                 <SidebarTopWrapper>
                     <SideBarTopContentWrapper>
-                        <AvatarDiv/>
+                        <NavLink
+                            to={"/"}
+                        >
+                            <AvatarDiv/>
+                        </NavLink>
                         <NameDiv>Cesc</NameDiv>
-                        <p>Made for you with ❤️ to dissect me like an open book.</p>
+                        <Slogan />
                     </SideBarTopContentWrapper>
                 </SidebarTopWrapper>
             <SideBarBottomWrapper>
