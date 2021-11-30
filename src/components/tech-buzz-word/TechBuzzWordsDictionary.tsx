@@ -56,7 +56,7 @@ export const PHP_UNIT = 'PHP unit';
 export const ARTICUNO = 'Articuno';
 export const ZAPDOS = 'Zapdos';
 export const MOLTRES = 'Moltres';
-export const SNORLAX = 'Piano';
+export const SNORLAX = 'Snorlax';
 export const SQUIRTLE = 'Squirtle';
 export const JOLTEON = 'Jolteon';
 
