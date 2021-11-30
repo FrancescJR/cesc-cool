@@ -1,6 +1,24 @@
 import React from 'react';
 import WorkingExperienceItem from "../components/collapsible-element/WorkingExperienceItem";
 import MainContentTitle from "../components/maincontent/MainContentTitle";
+import TechBuzzWord from "../components/tech-buzz-word/TechBuzzWord";
+import './extra-page-styles.scss';
+import {
+    PHP,
+    SYMFONY,
+    DDD,
+    EVENT_SOURCING,
+    CQRS,
+    POSTGRESQL,
+    RabbitMQ,
+    DOCKER,
+    MYSQL,
+    TERRAFORM,
+    AWS,
+    DRUPAL,
+    VAGRANT,
+    LINUX_SYSADMIN
+} from "../components/tech-buzz-word/TechBuzzWordsDictionary";
 
 
 export default function WorkingExperience() {
@@ -23,6 +41,16 @@ export default function WorkingExperience() {
                     <p>Developing new feature and dealing with a lot of technical debt.</p>
                     <p>Trying to point out the weaknesses that this company has, but also learning from great
                         professional here.</p>
+                    <p className={'tech-word-list'}>
+                        <TechBuzzWord indexDictionary={PHP} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={SYMFONY} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={DDD} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={EVENT_SOURCING} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={CQRS} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={POSTGRESQL} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={RabbitMQ} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={DOCKER} selectedWords={[]} inSkillPage={false} />
+                    </p>
                 </WorkingExperienceItem>
                 <WorkingExperienceItem
                     isOpen={true}
@@ -48,6 +76,15 @@ export default function WorkingExperience() {
                         that vibrant atmosphere.</p>
                     <p>At the end, pandemic struck and the nightlife business couldn't support the IT team anymore, it shrank
                         until I finally also moved on.</p>
+                    <p className={'tech-word-list'}>
+                        <TechBuzzWord indexDictionary={PHP} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={SYMFONY} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={DDD} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={MYSQL} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={TERRAFORM} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={DOCKER} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={AWS} selectedWords={[]} inSkillPage={false} />
+                    </p>
                 </WorkingExperienceItem>
                 <WorkingExperienceItem
                     isOpen={true}
@@ -79,6 +116,14 @@ export default function WorkingExperience() {
                         terms of Drupal community. I worked in several projects (like the huge site proface.com
                         where I basically worked as a DevOps) and participated to many open source projects
                         especially inside the Drupal community.</p>
+                    <p className={'tech-word-list'}>
+                        <TechBuzzWord indexDictionary={PHP} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={SYMFONY} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={MYSQL} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={DRUPAL} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={VAGRANT} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={AWS} selectedWords={[]} inSkillPage={false} />
+                    </p>
                 </WorkingExperienceItem>
                 <WorkingExperienceItem
                     isOpen={true}
@@ -95,6 +140,12 @@ export default function WorkingExperience() {
                         and it is backed up by several Nobel laureates prize winners.</p>
                     <p>I was in charge of all the web pages also outsourced and the creator of the main account
                         system that the university used to assign its resourced to its employees.</p>
+                    <p className={'tech-word-list'}>
+                        <TechBuzzWord indexDictionary={PHP} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={SYMFONY} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={DRUPAL} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={LINUX_SYSADMIN} selectedWords={[]} inSkillPage={false} />
+                    </p>
                 </WorkingExperienceItem>
                 <WorkingExperienceItem
                     isOpen={true}
@@ -110,6 +161,11 @@ export default function WorkingExperience() {
                         in Symfony 1.4!</p>
                     <p>Thanks to the experience I got there about Drupal and the things that they taught me I could
                         find my first non internship real job in Japan.</p>
+                    <p className={'tech-word-list'}>
+                        <TechBuzzWord indexDictionary={PHP} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={SYMFONY} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={DRUPAL} selectedWords={[]} inSkillPage={false} />
+                    </p>
                 </WorkingExperienceItem>
             </div>
         </div>

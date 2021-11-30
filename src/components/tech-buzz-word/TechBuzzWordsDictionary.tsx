@@ -53,6 +53,8 @@ export const JENKINS = 'Jenkins';
 export const AWS_WILDCARD = 'The rest of AWS';
 export const PHP_CMS_WILDCARD = 'The rest of CMS';
 export const PHP_UNIT = 'PHP unit';
+export const VAGRANT = 'Vagrant';
+export const LINUX_SYSADMIN = 'Sysadmin for Linux';
 export const ARTICUNO = 'Articuno';
 export const ZAPDOS = 'Zapdos';
 export const MOLTRES = 'Moltres';
@@ -284,6 +286,11 @@ export const TECHNOLOGIES: {[key:string] : TechBuzzWordScaffolding}  = {
         'experience_description': 'I used to deal with Varnish, but not being able to use it with http was a deal breaker' +
             'until it wasn\'t for private networks, but all of those caches... invalidation is always a nightmare.'
     },
+    [VAGRANT] : {
+        'name': VAGRANT,
+        'level': 3,
+        'experience_description': 'Lately not using it much. It got replaced by Docker.'
+    },
     [LUA] : {
         'name': LUA,
         'level': 4,
@@ -402,6 +409,12 @@ export const TECHNOLOGIES: {[key:string] : TechBuzzWordScaffolding}  = {
         'name': AWS_WILDCARD,
         'level': 5,
         'experience_description': 'See AWS.'
+    },
+    [LINUX_SYSADMIN] : {
+        'name': LINUX_SYSADMIN,
+        'level': 4,
+        'experience_description': 'Just related with Bash scripting, docker, ssh, etc. I feel very comfortable with ' +
+            'Linux based OS and I normally customize them at my liking.'
     },
     [PHP_CMS_WILDCARD] : {
         'name': PHP_CMS_WILDCARD,
