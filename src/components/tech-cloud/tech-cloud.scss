@@ -1,0 +1,9 @@
+.tech-words-cloud {
+  display:flex;
+  flex-wrap : wrap;
+  align-items: center;
+  justify-content: center;
+  .tech-buzz-word {
+    margin:5px;
+  }
+}

@@ -19,7 +19,7 @@ export default function TechProject(props: TechProjectProps){
             <div className={'tech-project-header'}>
                 <div className={'tech-project-title'}>{title}</div>
                 <div className={'tech-project-technologies'}>{props.technologies.map(function(technologyName:string){
-                    return <TechBuzzWord indexDictionary={technologyName}/>;
+                    return <TechBuzzWord indexDictionary={technologyName} selectedWords={[]} inSkillPage={false} key={technologyName} />;
                 })}</div>
             </div>
             <div className={'tech-project-description'}>

@@ -12,7 +12,7 @@ interface menuProps {
 
 
 export default function Menu (props: menuProps) {
-    const [dimensions, setDimensions] = React.useState({
+    const [, setDimensions] = React.useState({
         height: window.innerHeight,
         width: window.innerWidth
     })

@@ -1,24 +1,27 @@
 import React from 'react';
 import MainContentTitle from "../components/maincontent/MainContentTitle";
-
-import {TECHNOLOGIES} from "../components/tech-buzz-word/TechBuzzWordsDictionary";
-import TechBuzzWord from "../components/tech-buzz-word/TechBuzzWord";
+import TechCloud from "../components/tech-cloud/tech-skill-cloud";
+import TechTable from "../components/tech-table/tech-table";
+import {useSearchParams} from "react-router-dom";
 
 export default function Skills() {
 
-    let tech_cloud = Object.keys(TECHNOLOGIES).map((key) => {
-        return <TechBuzzWord indexDictionary={key}/>
-    })
+    let [searchParams] = useSearchParams();
+
+    let selectedWords: string[];
+    selectedWords = [];
+    let searchString = searchParams.get('search');
+
+    if (searchString) {
+        selectedWords = searchString.split(',');
+    }
+
 
     return (
         <div>
             <MainContentTitle title={'Skills'}/>
-            <div className={'tech-words-cloud'}>
-                {tech_cloud}
-            </div>
-            <div className={'tech-word-list'}>
-
-            </div>
+            <TechCloud selectedSkills={selectedWords}/>
+            <TechTable selectedSkills={selectedWords}/>
         </div>
     );
 }

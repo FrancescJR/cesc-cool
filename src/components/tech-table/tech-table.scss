@@ -1,0 +1,42 @@
+.tech-table {
+  margin-top: 2em;
+  padding:0.25em;
+}
+
+
+.tech-table-row {
+  display: flex;
+  padding:0.5em 0;
+  border-bottom: 1px solid #0057CF;
+  align-items: baseline;
+  &.mobile{
+    border-bottom: none;
+  }
+
+  .tech-table-row-title {
+    min-width:20%;
+    &.mobile {
+      min-width: 50%;
+    }
+
+  }
+
+  .tech-table-row-level {
+    margin-right:1em;
+    &.mobile {
+      text-align: right;
+      min-width: 50%;
+    }
+  }
+
+  .tech-table-row-description {
+    flex-grow:4;
+    font-size: 0.85em;
+    vertical-align: middle;
+    &.mobile{
+      border-bottom: 1px solid #0057CF;
+      padding-bottom: 0.5em;
+    }
+  }
+
+}

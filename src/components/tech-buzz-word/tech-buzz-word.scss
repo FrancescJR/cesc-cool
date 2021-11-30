@@ -2,15 +2,18 @@ $tech-word-color: #434343;
 
 .tech-buzz-word {
   font-size: 0.75em;
-  background: $tech-word-color;
+  //background: $tech-word-color;
   text-decoration: none;
-  box-shadow: 1px 1px 1px $tech-word-color;
+  //box-shadow: 1px 1px 1px $tech-word-color;
+  border:1px solid $tech-word-color;
   padding: 0.50em;
   margin:0.15em 0.25em;
-  color: #fff;
+  //color: #fff;
+  color: $tech-word-color;
+  border-radius: 8px;
 }
 
-.tech-buzz-word:hover {
-  color: $tech-word-color;
-  background: #fff;
+.tech-buzz-word:hover, .tech-buzz-word.selected {
+  background: $tech-word-color;
+  color: #fff;
 }

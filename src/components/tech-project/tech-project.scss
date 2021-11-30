@@ -1,7 +1,8 @@
-$pill-color: #578ae7;
+$pill-color: #a1a1a1;
 $pill-color-hover: #373a47;
+
 .tech-project-pill {
-  border-radius: 3em;
+  //border-radius: 3em;
   margin: 1em 0;
 
   .tech-project-title {
@@ -9,32 +10,35 @@ $pill-color-hover: #373a47;
     color: $pill-color;
 
     a, .no-link-title {
-      border-radius: 1.5em 1.5em 0 0;
-      border: 1px solid $pill-color;
-      background: $pill-color;
-      padding: 0.5em 1em;
-      text-decoration: none;
-      color:#fff;
-      width: 100%;
+      //border-radius: 1.5em 1.5em 0 0;
+      //border: 1px solid $pill-color;
+      //background: $pill-color;
+
+      border-bottom:1px solid $pill-color;
+      padding: 0.5em 0;
+      margin:0 2em 1em;
+      //text-decoration: none;
+      color:#000;
+      width: 90%;
       display: inline-block;
     }
     a:hover{
-      background: $pill-color-hover
+      //background: $pill-color
     }
   }
 
   .tech-project-technologies {
-    padding: 0.5em 1em 0.75em;
-    border-bottom: 1px solid $pill-color;
-    border-left: 1px solid $pill-color;
-    border-right: 1px solid $pill-color;
+    padding: 0.5em 2em 0.75em;
+    //border-bottom: 1px solid $pill-color;
+    //border-left: 1px solid $pill-color;
+    //border-right: 1px solid $pill-color;
   }
 
   .tech-project-description {
-    padding: 0.5em 1em;
-    border-bottom: 1px solid $pill-color;
-    border-left: 1px solid $pill-color;
-    border-right: 1px solid $pill-color;
+    padding: 0.5em 2em;
+    //border-bottom: 1px solid $pill-color;
+    //border-left: 1px solid $pill-color;
+    //border-right: 1px solid $pill-color;
   }
 
 }
