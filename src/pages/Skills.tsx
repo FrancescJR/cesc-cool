@@ -20,8 +20,11 @@ export default function Skills() {
     return (
         <div>
             <MainContentTitle title={'Skills'}/>
-            <p>If you can make sense of this page. For me is just a game. If you're taking it seriously, you'll need to click one by one
-                 and read them all.</p>
+            <p>This page is for recruiters, so they can check and cross from their job description list's "requirements" section.
+                It's just that
+                many job descriptions have little sense, asking for too fine grain skills. And I am just
+                mocking that here, in case you haven't noticed.</p>
+            <p>If you're taking it seriously, you'll need to click one by one and read them all.</p>
             <TechCloud selectedSkills={selectedWords}/>
             <TechTable selectedSkills={selectedWords}/>
         </div>

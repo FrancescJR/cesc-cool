@@ -1,5 +1,6 @@
 import React from 'react';
 import MainContentTitle from "../components/maincontent/MainContentTitle";
+import {BOOKS, SIDE_HUSTLE} from "../index";
 
 
 
@@ -7,6 +8,13 @@ export default function InternetExposure() {
     return (
         <div>
             <MainContentTitle title={'Public me'} />
+            <h4>GitHub</h4>
+            <p>For my personal projects, and some from my side hustle (see <a href={"/" + SIDE_HUSTLE}>here</a>) this is my github:
+            <a target="_blank" rel="noreferrer" href={'https://github.com/FrancescJR'} >https://github.com/FrancescJR</a></p>
+            <p>There are also some technical challenges completed. All of them I did before actually reading all the books
+             from <a href={'/' + BOOKS}>here</a>, so probably right now I would do things differently, but on general terms, they are quite good. That's
+            why I am not embarrassed of showing them. If somebody thinks they are not good enough, probably that somebody is a very insecure
+             person with a high ego, and I am not really looking forward to meet, even less work with that person.</p>
             <h4>Social Media</h4>
             <p>I am not much active on social media. I reply linkedIn messages and I post from time to time
             on Instagram. Facebook is there to keep some contacts, but a part from that is like I don't have it.</p>
@@ -28,6 +36,7 @@ export default function InternetExposure() {
                 on the following day my cowardice gains terrain and I put it all back to private again.</p>
             <p>Well here you will find some of the posts, the few ones I dare to have public now. I have all the old ones
                 too but this time I haven't published them.</p>
+            <p>I just messed up this subdomain at moving the name servers from google to aws. Sorry...</p>
             <p><a href={'http://economic.cesc.cool/'} target="_blank" rel="noreferrer" >http://economic.cesc.cool/</a></p>
 
             <p>I will probably write some books. One that I have a little bit unorganized but with chapters all over

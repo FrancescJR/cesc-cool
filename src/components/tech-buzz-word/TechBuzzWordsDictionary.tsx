@@ -79,7 +79,7 @@ export const TECHNOLOGIES: {[key:string] : TechBuzzWordScaffolding}  = {
         'name': PHP_UNIT,
         'level': 4,
         'experience_description': 'If I can, I start with the tests. I\'m lately realizing that I could improve a little bit' +
-            'the way I\'ve been testing.'
+            ' the way I\'ve been testing.'
     },
     [SYMFONY] : {
         'name': SYMFONY,

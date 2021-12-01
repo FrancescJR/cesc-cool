@@ -15,10 +15,11 @@ export default function Books() {
             <Book title={'Domain-Driven Design: Tackling Complexity in the Heart of Software'} author={'Eric Evans'}
                   amazonLink={'https://www.amazon.com/gp/product/B00794TAUG/ref=kinw_myk_ro_title'}>
                 <p>Known as the blue book. Now it is already a little bit old.</p>
-                <p>I have to admin that I read it mainly to be able throw proper reasoning to the disasters that I
-                was seeing the company I was working for did.</p>
-                <p>But what I got was a travel back in time when I was at the university coursing "software engineering 1"
-                and "2". All the design patterns etc.</p>
+                <p>I have to admit that I read it mainly to be able throw proper reasoning to some people seeing the disasters present
+                    at the company I was working for.</p>
+                <p>I was expecting some eye opening clear rules to follow, but what I got was a travel back in time when
+                    I was at the university coursing "software engineering 1"
+                and "2". All the design patterns etc. Finally I understood the importance of those and why they were so insistent on that...</p>
                 <p>I realized that I myself completely forgot about all of those teachings when I was working
                 with Drupal or following Symfony documentation.</p>
                 <p>At the time of reading it, I had already experience developing in hexagonal architecture and

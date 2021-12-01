@@ -38,9 +38,11 @@ export default function WorkingExperience() {
                     endDate={'Present day'}
                     eventKey="1"
                 >
-                    <p>Developing new feature and dealing with a lot of technical debt.</p>
-                    <p>Trying to point out the weaknesses that this company has, but also learning from great
-                        professional here.</p>
+                    <p>Developing new features and making myself responsible for a lot of code
+                        that can only be called technical debt.</p>
+                    <p>Trying to point out the weaknesses -at many levels- that this company has that generated such a legacy base
+                        from a position with very little power, but slowly and steady pushing for the good direction.</p>
+                    <p>Using the chance to learn from the great professionals that work here.</p>
                     <p className={'tech-word-list'}>
                         <TechBuzzWord indexDictionary={PHP} selectedWords={[]} inSkillPage={false} />
                         <TechBuzzWord indexDictionary={SYMFONY} selectedWords={[]} inSkillPage={false} />
@@ -71,10 +73,10 @@ export default function WorkingExperience() {
                     <p>I helped creating a great atmosphere were failures and experimentation were not an issue and
                         yet productivity thrilled. Thanks to everybody's effort.</p>
                     <p>There were some months at the beginning of this period that I had to act as the final responsible
-                        of all the technical decisions, during which I focused on hiring the one that would replace me and
-                        that could deal a proper communication between departments so we could finally achieve
+                        of all the technical decisions (kind of an acting CTO), during which I focused on hiring the one that would replace me and
+                        that could deal with and have proper communication between departments so we could finally achieve
                         that vibrant atmosphere.</p>
-                    <p>At the end, pandemic struck and the nightlife business couldn't support the IT team anymore, it shrank
+                    <p>At the end, the pandemic struck and the nightlife business couldn't support the IT team anymore, it shrank
                         until I finally also moved on.</p>
                     <p className={'tech-word-list'}>
                         <TechBuzzWord indexDictionary={PHP} selectedWords={[]} inSkillPage={false} />
