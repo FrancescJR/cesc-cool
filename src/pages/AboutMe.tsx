@@ -12,7 +12,7 @@ export default function AboutMe() {
             <p>I am an engineer born and raised in Barcelona and seasoned in Japan for 5 years. My major
             is computer science and since I graduated I have been working on the development of full web applications
             and systems. I try to always follow SOLID principles and to have a DDD approach to problems. Those and
-                a goo devops mindset are the best tools to minimiza technical debt and make the SCRUM velocity
+                a good devops mindset are the best tools to minimize technical debt and make the SCRUM velocity
                 of any team soar.</p>
 
             <h5>Long story</h5>

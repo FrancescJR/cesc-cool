@@ -34,7 +34,7 @@ export default function WorkingExperience() {
                     companyLink={'https://www.zinio.com/es'}
                     location={'Barcelona'}
                     gmapsLink={'https://goo.gl/maps/cNwe71B9HbKzr5rg7'}
-                    fromDate={'January 2021'}
+                    fromDate={'December 2020'}
                     endDate={'Present day'}
                     eventKey="1"
                 >
@@ -62,7 +62,7 @@ export default function WorkingExperience() {
                     location={'Barcelona'}
                     gmapsLink={'https://goo.gl/maps/XYC4EkfHEYXPSb9s6'}
                     fromDate={'February 2018'}
-                    endDate={'January 2021'}
+                    endDate={'December 2020'}
                     eventKey="2">
                     <p>During this period I was setting the technical direction of the company on general terms.</p>
                     <p>On concrete terms this was mainly moving from a legacy monolith to a microservices architecture
