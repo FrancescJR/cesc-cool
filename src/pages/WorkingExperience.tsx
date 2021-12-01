@@ -40,8 +40,8 @@ export default function WorkingExperience() {
                 >
                     <p>Developing new features and making myself responsible for a lot of code
                         that can only be called technical debt.</p>
-                    <p>Trying to point out the weaknesses -at many levels- that this company has that generated such a legacy base
-                        from a position with very little power, but slowly and steady pushing for the good direction.</p>
+                    <p>Trying to get rid of all the problems that generated such a legacy base
+                        from a position with very little power, and slowly and steady pushing for the good direction.</p>
                     <p>Using the chance to learn from the great professionals that work here.</p>
                     <p className={'tech-word-list'}>
                         <TechBuzzWord indexDictionary={PHP} selectedWords={[]} inSkillPage={false} />
@@ -67,9 +67,10 @@ export default function WorkingExperience() {
                     <p>During this period I was setting the technical direction of the company on general terms.</p>
                     <p>On concrete terms this was mainly moving from a legacy monolith to a microservices architecture
                         applying DDD principles.</p>
-                    <p>Truth be told, the name of technical leader was mainly for the accountability I holded. The
+                    <p>Truth be told, the name of technical leader was mainly for the accountability I held. The
                         technical team I was "leading" was extremely good. Decisions were always consensed and reasoned and the feeling
-                        was that of a flat hierarchy.</p>
+                        was that of a flat hierarchy. I was the "technical leader" mostly in terms of responsibility and
+                    accountability.</p>
                     <p>I helped creating a great atmosphere were failures and experimentation were not an issue and
                         yet productivity thrilled. Thanks to everybody's effort.</p>
                     <p>There were some months at the beginning of this period that I had to act as the final responsible
