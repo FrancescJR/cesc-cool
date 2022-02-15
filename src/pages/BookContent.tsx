@@ -1,13 +1,17 @@
 import React from 'react';
 import Book from "../components/book/Book";
 import MainContentTitle from "../components/maincontent/MainContentTitle";
+import BookDualMenu from "../components/book-dual-menu/BookDualMenu";
 
 
 
-export default function Books() {
+export default function BookContent() {
+
+
     return (
         <div>
             <MainContentTitle title={'Books'} />
+            <BookDualMenu notesActive={false}/>
             <p> This is a list of technical books that I have read and some of them re-read, that helped me shape
                 my beliefs and my points of views of what IT on every company -big, small, start-up etc- should be.</p>
             <p>You can consider that part of my education.</p>
@@ -19,19 +23,19 @@ export default function Books() {
                     at the company I was working for.</p>
                 <p>I was expecting some eye opening clear rules to follow, but what I got was a travel back in time when
                     I was at the university coursing "software engineering 1"
-                and "2". All the design patterns etc. Finally I understood the importance of those and why they were so insistent on that...</p>
+                    and "2". All the design patterns etc. Finally I understood the importance of those and why they were so insistent on that...</p>
                 <p>I realized that I myself completely forgot about all of those teachings when I was working
-                with Drupal or following Symfony documentation.</p>
+                    with Drupal or following Symfony documentation.</p>
                 <p>At the time of reading it, I had already experience developing in hexagonal architecture and
-                with a DDD approach, and this book didn't help me much with my battle at the company to be frank.</p>
+                    with a DDD approach, and this book didn't help me much with my battle at the company to be frank.</p>
             </Book>
-            
+
             <Book title={'Implementing Domain-Driven Design'} author={'Vaughn Vernon'} amazonLink={'https://www.amazon.com/gp/product/B00BCLEBN8/ref=kinw_myk_ro_title'}>
                 <p>Known as the red book, it's commonly said to be very boring, but I could read it all without being
-                bored. A big reason is that I could finally express with proper words and reasoning and not
-                just hunches what the company I was working for was doing wrong. Very wrong. (shared domain
-                between services with no clear source of truth, nor clear understanding of the behaviours, infrastructure
-                layers coupled all around everywhere and other... to find out more, read my book soon to be announced)</p>
+                    bored. A big reason is that I could finally express with proper words and reasoning and not
+                    just hunches what the company I was working for was doing wrong. Very wrong. (shared domain
+                    between services with no clear source of truth, nor clear understanding of the behaviours, infrastructure
+                    layers coupled all around everywhere and other... to find out more, read my book soon to be announced)</p>
                 <p>This was more what I expected about DDD. The philosophy and intentions of the actual movement are really well explained.</p>
                 <p>I realized that many people say DDD when they actually mean hexagonal architecture.</p>
                 <p>You can't do DDD if you don't know the domain, and it takes time to know the domain, and a lot of
@@ -54,13 +58,13 @@ export default function Books() {
                 <p>It's based mainly also on the implementing DDD book, but with a way more practical approach.</p>
                 <p>This is really book to keep returning often</p>
                 <p>I just wished that the example about CQRS + event sourcing would be a little bit extended, but well there are more books
-                about that and also open repos to check.</p>
+                    about that and also open repos to check.</p>
             </Book>
             <h5>DevOps</h5>
             <Book title={'The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Wina'}
                   author={'Gene Kim'} amazonLink={'https://www.amazon.com/gp/product/B078Y98RG8/ref=kinw_myk_ro_title'}>
                 <p>OMG! I couldn't stop reading this book. It was like, this is some message from above, and even
-                though I didn't work on a company alike where the book takes place.</p>
+                    though I didn't work on a company alike where the book takes place.</p>
                 <p>It was so easy to translate what was happening on the book to my company though.</p>
                 <p>The problem is that it's me who read this book, not any "C"XX nor "director" in my company.</p>
             </Book>
@@ -68,11 +72,11 @@ export default function Books() {
                    author={'Gene Kim'} amazonLink={'https://www.amazon.com/gp/product/B07QT9QR41/ref=kinw_myk_ro_title'}>
                 <p>I wanted more of the above so I also read this one.</p>
                 <p>This one pissed me off a little bit. The amount of "awesome" and alike adjectives made me roll my eyes too often.
-                Probably it was a rolling eye per page.</p>
+                    Probably it was a rolling eye per page.</p>
                 <p>To me there was a big contradiction: on one hand, at the end of the book you have a bunch
                     of awesome developers that develop company-level features in a week. And on the other hand
-                you have those same developers at the beginning of the book being completely useless and never wondering
-                about the big picture of the company. It's like the super smartest people were at the same time the dumbest, or dullest.</p>
+                    you have those same developers at the beginning of the book being completely useless and never wondering
+                    about the big picture of the company. It's like the super smartest people were at the same time the dumbest, or dullest.</p>
                 <p>None the less, it's a good book and recommendable.</p>
             </Book>
             <Book
@@ -80,33 +84,33 @@ export default function Books() {
                 author={'Gene Kim, Jez Humble, Patrick Debois, John Willis'}
                 amazonLink={'https://www.amazon.com/gp/product/B01M9ASFQ3/ref=kinw_myk_ro_title'}>
                 <p>After reading the project Phoenix and project Unicorn, I had to finally know more about those
-                cryptic "ways" of devops.</p>
+                    cryptic "ways" of devops.</p>
                 <p>It's astonishing how some devops in my organization practically are working against all the principles
-                that this book is explaining.</p>
+                    that this book is explaining.</p>
                 <p>This book is simple and clear. Following the teachings is quite simple, the only problem that many
-                are kind of counterintuitive. And the other problem is that again it's me who's reading this book, and not
-                any CXX nor directory in my organization. And I can't be the one complaining all the time.</p>
+                    are kind of counterintuitive. And the other problem is that again it's me who's reading this book, and not
+                    any CXX nor directory in my organization. And I can't be the one complaining all the time.</p>
             </Book>
 
             <Book title={'Essential Scrum: A Practical Guide to the Most Popular Agile Process (Addison-Wesley Signature Series (Cohn))'}
                   author={'Rubin Kenneth S'} amazonLink={'https://www.amazon.com/gp/product/B008NAKA5O/ref=kinw_myk_ro_title'}
-                  >
+            >
                 <p>Well I put this book on devops, but also because the philosophy that is devops goes hand in hand with
-                scrum.</p>
+                    scrum.</p>
                 <p>This is a very well explained guide. But I would say there's nothing new if you have been working
-                on some agile for a while, you would have probably guessed already what your company was doing right or
-                wrong.</p>
+                    on some agile for a while, you would have probably guessed already what your company was doing right or
+                    wrong.</p>
                 <p>The most interesting part for me was how the IT department of a big company could be organized since
-                I never worked in a big IT company. And the only big "IT" company I worked in was obvious that they
-                got all of this wrong.</p>
+                    I never worked in a big IT company. And the only big "IT" company I worked in was obvious that they
+                    got all of this wrong.</p>
             </Book>
 
             <h5>Wish list</h5>
             <p>I have already purchased some books and some others are about to be. This is the list:</p>
             <Book title={'NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence'}
                   author={'Pramod J. Sadalage, Martin Fowler'}
-                      amazonLink={'https://www.amazon.com/gp/product/B0090J3SYW/ref=kinw_myk_ro_title'}
-                  />
+                  amazonLink={'https://www.amazon.com/gp/product/B0090J3SYW/ref=kinw_myk_ro_title'}
+            />
             <Book title={'Site Reliability Engineering: How Google Runs Production Systems'}
                   author={'Niall Richard Murphy, Betsy Beyer, Chris Jones, Jennifer Petoff'}
                   amazonLink={'https://www.amazon.com/gp/product/B01DCPXKZ6/ref=kinw_myk_ro_title'}
@@ -124,7 +128,7 @@ export default function Books() {
                 need to consult -that often- the proper way because you eventually know it deep inside.
             </p></Book>
             <p>Finally I am missing a book of event sourcing and CQRS by Mr.Young that I found somewhere, and this
-            one is the next one on my list for real, since right now we are implementing that.</p>
+                one is the next one on my list for real, since right now we are implementing that.</p>
 
         </div>
     );

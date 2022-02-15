@@ -7,10 +7,10 @@ import WorkingExperience from "./WorkingExperience";
 import AboutMe from "./AboutMe";
 import SideHustle from "./SideHustle";
 import Skills from "./Skills";
-import Books from "./Books";
 import Education from "./Education";
 import InternetExposure from "./InternetExposure";
 import Languages from "./Languages";
+import BookPage from "./BookPage";
 
 const PublicContentDiv = styled.div`
 width: auto;
@@ -42,7 +42,7 @@ export default function MainContent(props: siteProps) {
             break;
         }
         case BOOKS: {
-            contentToRender = <Books/>;
+            contentToRender = <BookPage/>;
             break;
         }
         case INTERNET_EXPOSURE: {
