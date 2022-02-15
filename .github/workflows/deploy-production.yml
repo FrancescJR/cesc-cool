@@ -27,3 +27,9 @@ jobs:
         run: |
           aws s3 sync build/ s3://cesc-cool-production/public/
           aws s3 cp build/index.html s3://cesc-cool-production/
+      - name: Invalidate cache so CF stops serving old non existent versions
+        # I thought it was something I miss configured, but it doesn't seem that easy...
+        # more info https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serving-outdated-content-s3/
+        # tGoogling around seems that invalidation is the way to go
+        run: |
+          aws cloudfront create-invalidation --distribution-id EF4W7J97URLAN --paths '/index.html'
