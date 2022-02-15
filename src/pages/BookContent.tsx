@@ -15,12 +15,27 @@ export default function BookContent() {
             <p> This is a list of technical books that I have read and some of them re-read, that helped me shape
                 my beliefs and my points of views of what IT on every company -big, small, start-up etc- should be.</p>
             <p>You can consider that part of my education.</p>
+            
+            <h5>Currently Reading</h5>
+            <p>I might convert this space to something where I write all my notes about the books. I use kindle
+            functions like highlight and note, but it's quite cumbersome to go back on them, and they are quite out of the context.</p>
+            <p>I will start with the book I'm reading now, and maybe I will update teh rest of this books in this list with 
+            all my notes and highlights (quotes of the book).</p>
+            <Book title={'Building microservices'} author={'Sam Newman'} amazonLink={'https://www.amazon.com/gp/product/B09B5L4NVT'}>
+                <p>The second edition.</p>
+                <p>So far I really really like this book. The easygoing approach discussing all options (as opposed
+                to some DDD books, or well, some people interpreting the DDD books as an absolute universal law)
+                and taking all *valid* options to building systems is very welcome.</p>
+
+            </Book>
+            
+            
             <h5>Domain Driven Design</h5>
             <Book title={'Domain-Driven Design: Tackling Complexity in the Heart of Software'} author={'Eric Evans'}
                   amazonLink={'https://www.amazon.com/gp/product/B00794TAUG/ref=kinw_myk_ro_title'}>
                 <p>Known as the blue book. Now it is already a little bit old.</p>
-                <p>I have to admit that I read it mainly to be able throw proper reasoning to some people seeing the disasters present
-                    at the company I was working for.</p>
+                <p>I have to admit that I read it mainly to be able throw proper reasoning to some people seeing the disasters lurking
+                    around a company I was working for.</p>
                 <p>I was expecting some eye opening clear rules to follow, but what I got was a travel back in time when
                     I was at the university coursing "software engineering 1"
                     and "2". All the design patterns etc. Finally I understood the importance of those and why they were so insistent on that...</p>
