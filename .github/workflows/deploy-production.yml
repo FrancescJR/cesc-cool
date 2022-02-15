@@ -4,6 +4,15 @@ on:
     branches:
       - main
 jobs:
+  # To convert that to an action.
+  # Env variables needed:
+  # -secrets.AWS_DEPLOYER_KEY_ID
+  # - secrets.AWS_DEPLOYER_KEY_SECRET
+  # - distribution-id to invalidate cache
+  # - s3 bucket name
+  # Permissions for AWS user needed:
+  # - Access to bucket -> on my case is via custom policy set on terraform.
+  # -  cloudfront:CreateInvalidation -> attach policy on iam user/group.
   deploy-production:
     runs-on: ubuntu-latest
     steps:
@@ -32,4 +41,4 @@ jobs:
         # more info https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serving-outdated-content-s3/
         # tGoogling around seems that invalidation is the way to go
         run: |
-          aws cloudfront create-invalidation --distribution-id EF4W7J97URLAN --paths '/index.html'
+          aws cloudfront create-invalidation --distribution-id EF4W7J97URLAN --paths '/*'
