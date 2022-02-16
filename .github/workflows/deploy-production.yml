@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: EniltrexAction
-        uses: eniltrexAdmin/deploy-static-aws-cf-s3-site-action@v1.0.0
+        uses: eniltrexAdmin/deploy-static-aws-cf-s3-site-action@v1.0.1
         with:
           aws-access-key-id: ${{ secrets.AWS_DEPLOYER_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_DEPLOYER_KEY_SECRET }}
