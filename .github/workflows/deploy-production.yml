@@ -4,41 +4,14 @@ on:
     branches:
       - main
 jobs:
-  # To convert that to an action.
-  # Env variables needed:
-  # -secrets.AWS_DEPLOYER_KEY_ID
-  # - secrets.AWS_DEPLOYER_KEY_SECRET
-  # - distribution-id to invalidate cache
-  # - s3 bucket name
-  # Permissions for AWS user needed:
-  # - Access to bucket -> on my case is via custom policy set on terraform.
-  # -  cloudfront:CreateInvalidation -> attach policy on iam user/group.
   deploy-production:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v2
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - name: NPM install
-        run: npm install
-      - name: NPM build
-        run: npm run build
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+      - id: EniltrexAction
+        uses: eniltrexAdmin/deploy-static-aws-cf-s3-site-action@v1.0.0
         with:
           aws-access-key-id: ${{ secrets.AWS_DEPLOYER_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_DEPLOYER_KEY_SECRET }}
           aws-region: eu-west-3
-      - name: Copy files to s3 bucket
-        run: |
-          aws s3 sync build/ s3://cesc-cool-production/public/
-          aws s3 cp build/index.html s3://cesc-cool-production/
-      - name: Invalidate cache so CF stops serving old non existent versions
-        # I thought it was something I miss configured, but it doesn't seem that easy...
-        # more info https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-serving-outdated-content-s3/
-        # tGoogling around seems that invalidation is the way to go
-        run: |
-          aws cloudfront create-invalidation --distribution-id EF4W7J97URLAN --paths '/*'
+          aws-s3-bucket-name: ${{ secrets.AWS_S3_BUCKET_NAME }}
+          aws-cf-id: ${{ secrets.AWS_CF_ID }}
