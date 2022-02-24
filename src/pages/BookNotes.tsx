@@ -30,7 +30,10 @@ export default function BookNotes() {
                 <div>
                     {ddd_in_php_book_notes}
                 </div>
-
+                <h5>Implementing DDD</h5>
+                <div>
+                    {implementing_ddd_notes}
+                </div>
             </div>
         </div>
         );
