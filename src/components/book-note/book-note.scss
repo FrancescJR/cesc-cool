@@ -1,0 +1,18 @@
+.book-note-container{
+  padding:1em 0;
+  border-bottom: 1px solid #0a53be;
+}
+
+.quote {
+  border-left: 3px solid #0a53be;
+  color: #1a1a1a;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.25em;
+  font-style: italic;
+  line-height: 1.8em;
+  margin: 1.1em 0;
+  padding: 1em 2em;
+  position: relative;;
+  transition: .2s border ease-in-out;
+  z-index: 0;
+}
