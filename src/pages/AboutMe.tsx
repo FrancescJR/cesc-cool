@@ -35,6 +35,11 @@ export default function AboutMe() {
                 second skill for every member, so I am not sure which would be the resulting letter) and that teams should
                 be autonomous to deploy to production and solve the problems without having to ask anything to people that
                 are probably unrelated to the question at hand.</p>
+            <h5>Stats</h5>
+            <p>Full name: Francesc Travesa Centrich</p>
+            <p>Email: name+lastname at gmail.com</p>
+            <p>Color: brownish light, like Turkish</p>
+            <p>Appearance: Irresistibly handsome</p>
         </div>
     );
 }
