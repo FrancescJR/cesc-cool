@@ -4,6 +4,8 @@ import BookDualMenu from "../components/book-dual-menu/BookDualMenu";
 import {BOOK_DDD_IN_PHP} from "../components/book-note/BookNotesDB1DDD_IN_PHP";
 import BookNote from "../components/book-note/BookNote";
 import {BOOK_IMPLEMENTING_DDD} from "../components/book-note/BookNotesDB2";
+import BookTabs from "../components/book-tab/BookTabs";
+import BookTab from "../components/book-tab/BookTab";
 
 
 export default function BookNotes() {
@@ -26,14 +28,11 @@ export default function BookNotes() {
             each book said about the same subject.</p>
             <p>It will also be filterable by book, not only per subject. So kind of Matrix.</p>
             <div>
-                <h5>About DDD in PHP</h5>
-                <div>
-                    {ddd_in_php_book_notes}
-                </div>
-                <h5>Implementing DDD</h5>
-                <div>
-                    {implementing_ddd_notes}
-                </div>
+                <BookTabs>
+                    <BookTab title="DDD in PHP (C.B.)">{ddd_in_php_book_notes}</BookTab>
+                    <BookTab title="Implementing DDD (V.V)">{implementing_ddd_notes}</BookTab>
+                    <BookTab title="Pear">Pear is green</BookTab>
+                </BookTabs>
             </div>
         </div>
         );
