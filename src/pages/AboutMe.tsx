@@ -56,9 +56,9 @@ export default function AboutMe() {
             never happen. Only the talent of one person is valid in this environment. The talents of the rest of
             the people become useless.</p>
             <p>Managers should make extra effort about correcting this. The problem is that often managers are also
-            afraid of being singled out and looking like idiots. Some advice here: </p>
+            afraid of being singled out and being made look like idiots. Some advice here: </p>
             <ul>
-                <li>constantly ask for opinions of everybody. (if anybody is resistant of giving it, probably this person
+                <li>constantly ask for opinions from everybody. (if anybody is resistant of giving it, probably this person
                 doesn't feel comfortable).</li>
                 <li>try to limit the size of the groups. The bigger the group, the bigger the fear to speak up.</li>
                 <li>Always assume that you might be wrong.</li>
@@ -68,7 +68,7 @@ export default function AboutMe() {
                 are happening.</li>
             </ul>
             <p>Because of my aversion to conflict, the chances that I quit the company instead of solving the problem
-            with this kind of people are way higher.</p>
+            with this kind of behaviours are way higher.</p>
             <p>Well to sum-up: safe environment. With proactive work to make it safe for real (doing the
                 bullet points above should be enough). If you are hiring
             and you do absolutely no action to make the environment safe, then it is as well as a not safe environment.</p>
