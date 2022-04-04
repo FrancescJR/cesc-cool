@@ -44,8 +44,8 @@ export default function AboutMe() {
             or what makes me thrive. It is crucial and should be carefully looked upon to get rid of certain
             behaviours.</p>
             <p>Small comments like "don't you know that?". "No, this has nothing to do with it". Or just out of the
-            blue lectures that are sketchy at least of tangent things. They all dynamite the safety of the environment.
-            People over sure about theis knowledge are the worst in my opinion. Especially because I am almost never
+            blue lectures that are sketchy to say the least of that have nothing to do with the matter at hand. They all dynamite the safety of the environment.
+            People that are over sure about their knowledge are the worst in my opinion. Especially because I am almost never
             sure, and I need to go and check the code, or the book that explained some concepts. I am really annoyed
             when I am lectured of something and then I read on the books (see the books section about the kind
             of books I am reading) that this lecture is either plain wrong, incomplete, or misses the point.</p>
