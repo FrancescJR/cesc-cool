@@ -134,7 +134,7 @@ export default function AboutMe() {
 
             <h5>Stats</h5>
             <p>Full name: Francesc Travesa Centrich</p>
-            <p>Email: name+lastname at gmail.com</p>
+            <p>Email: name.lastname at gmail.com</p>
             <p>Color: brownish light, like Turkish</p>
             <p>Appearance: Irresistibly handsome</p>
         </div>
