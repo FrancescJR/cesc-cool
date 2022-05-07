@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
     "module": "esnext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

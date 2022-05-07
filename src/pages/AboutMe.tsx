@@ -1,6 +1,6 @@
 import React from 'react';
 import MainContentTitle from "../components/maincontent/MainContentTitle";
-
+import {BOOKS} from "../index";
 
 
 export default function AboutMe() {
@@ -35,7 +35,17 @@ export default function AboutMe() {
                 second skill for every member, so I am not sure which would be the resulting letter) and that teams should
                 be autonomous to deploy to production and solve the problems without having to ask anything to people that
                 are probably unrelated to the question at hand.</p>
-            <h5>Companies</h5>
+            <p>There are a couple of things that define that make me different than the rest of the society. First of all
+            I always assume that my colleagues, the other people walking on the street, that anybody else is better than
+            me and that they have the right to teach me stuff. A japanese trait probably, the worst thing you can do is
+            to annoy the others. The bad thing about that is that I also expect a similar approach from others and that's
+            rarely the case.</p>
+            <p>The other differential trait is that I commonly take the scientific approach to solve problems/issues.
+            What's that? I start by some hypothesis of what could the problem, then I design and experiment that proves
+            or refutes my hypothesis, I gain this knowledge, and then I can finally solve the issue. I rarely solve an issue
+            without being able to explain exactly what was happening. This approach normally takes longer, but it's worth it
+            and with some experience on my shoulders I can go quite fast.</p>
+            <h5>F.A.Q. for hiring companies:</h5>
             <p>Recently recruiters ask me what am I looking for in a company. After seeing and working in a fair
             amount of them, the answer is quite extense, but here I will try to summarize the points that will
             make me motivate enough to work in a place.</p>
@@ -43,18 +53,6 @@ export default function AboutMe() {
             <p>That is from my latest experiences, the environment is what makes me feel miserable going to work
             or what makes me thrive. It is crucial and should be carefully looked upon to get rid of certain
             behaviours.</p>
-            <p>Small comments like "don't you know that?". "No, this has nothing to do with it". Or just out of the
-            blue lectures that are sketchy to say the least of that have nothing to do with the matter at hand. They all dynamite the safety of the environment.
-            People that are over sure about their knowledge are the worst in my opinion. Especially because I am almost never
-            sure, and I need to go and check the code, or the book that explained some concepts. I am really annoyed
-            when I am lectured of something and then I read on the books (see the books section about the kind
-            of books I am reading) that this lecture is either plain wrong, incomplete, or misses the point.</p>
-            <p>Look, we are all here constantly learning, constantly getting things wrong, but everybody should assume
-            the best of other people, not the opposite.</p>
-            <p>The problem, with that is that it is very hard to identify such environments. Just a single person
-            can make everybody afraid of speaking up and asking questions. Discussions that would get the best solution
-            never happen. Only the talent of one person is valid in this environment. The talents of the rest of
-            the people become useless.</p>
             <p>Managers should make extra effort about correcting this. The problem is that often managers are also
             afraid of being singled out and being made look like idiots. Some advice here: </p>
             <ul>
@@ -63,17 +61,20 @@ export default function AboutMe() {
                 <li>try to limit the size of the groups. The bigger the group, the bigger the fear to speak up.</li>
                 <li>Always assume that you might be wrong.</li>
                 <li>Identify harmful behaviour, but never point it out in front of others, deal with it personally.</li>
-                <li>Language nuances matter, sometimes the toxicity happens only, or stronger, in a language that
-                it is not native to you, but looking on the points above, you might discover if things like those
-                are happening.</li>
             </ul>
-            <p>Because of my aversion to conflict, the chances that I quit the company instead of solving the problem
-            with this kind of behaviours are way higher.</p>
+            <p>How to identify harmful behaviour? listen at the message being conveyed. You can single out the people
+            that on every interaction the message they want to convey is only this one: "I know this, I know a lot,
+            I know more than anybody else. Others don't know as much as me. I am better than my colleagues".
+                Regardless of the conversation at hand. A person whose motivation to show
+            off surpasses the motivation for a candid communication discussion is a person that destroys the environment.
+            You will realize those people hardly listen to others, and when they have to they don't do it for long normally
+            cutting before you aren't finished. Those are not good teachers either.</p>
             <p>Well to sum-up: safe environment. With proactive work to make it safe for real (doing the
                 bullet points above should be enough). If you are hiring
             and you do absolutely no action to make the environment safe, then it is as well as a not safe environment.</p>
             <h6>Impact</h6>
-            <p>On the DevOps Handbook, and also on Building Microservices books it is explained how useful/profitable/great
+            <p>On the <a href={'/' + BOOKS}>DevOps Handbook</a>, and also on <a href={'/' + BOOKS}>
+                Building Microservices</a> books it is explained how useful/profitable/great
                 it is to enable teams. Teams should have the whole stream and responsibility of a (part) of the
             product, from frontend to the infra. If the company has a single team, then this is pretty much the
             only way of working.</p>
@@ -130,13 +131,20 @@ export default function AboutMe() {
             <p>This is mainly for the long term. But I won't stay in a company in which I don't see myself in the future.
             but well, I have my aspirations of both getting the "devops title" and eventually working for myself only.
             Can you make it attractive enough that I can do the same but working for you?</p>
-
-
+            <h6><a href={'/' + BOOKS}>Books</a></h6>
+            <p>I would say books are very important to understand the big picture of the industry. You can not know
+                which are the good or bad practices without reading the appropriate books. There is knowledge of
+                people that have decades of experience, validated by other people that also have years of experience.</p>
+            <p>I have seen very smart people trying to solve problems in the most complicated way while several
+                easier options and more appropriate are just explained on those books. If in an interview I don't see absolutely
+                none of the books here mentioned not even once, to me that would be a red flag that the company is in a knowledge
+                cave, not aware of the industry standards.</p>
+            <p>Imagine a non safe environment on a place where nobody read any of the books! Well, I've seen some!</p>
             <h5>Stats</h5>
             <p>Full name: Francesc Travesa Centrich</p>
             <p>Email: name.lastname at gmail.com</p>
             <p>Color: brownish light, like Turkish</p>
-            <p>Appearance: Irresistibly handsome</p>
+            <p>Appearance: Irresistibly handsome and young, very young, so don't get surprised please.</p>
         </div>
     );
 }

@@ -2,33 +2,35 @@ import React from 'react';
 import Book from "../components/book/Book";
 import MainContentTitle from "../components/maincontent/MainContentTitle";
 import BookDualMenu from "../components/book-dual-menu/BookDualMenu";
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 
+const h5_css = css`
+    h5 {
+        padding-top:1em;
+        border-bottom:1px solid #000;
+    }
+`
 
 
 export default function BookContent() {
 
 
     return (
-        <div>
+        <div css={h5_css}>
             <MainContentTitle title={'Books'} />
             <BookDualMenu notesActive={false}/>
             <p> This is a list of technical books that I have read and some of them re-read, that helped me shape
                 my beliefs and my points of views of what IT on every company -big, small, start-up etc- should be.</p>
-            <p>You can consider that part of my education.</p>
+
+            <p>You can consider this list of books part of my education.</p>
             
             <h5>Currently Reading</h5>
-            <p>I might convert this space to something where I write all my notes about the books. I use kindle
-            functions like highlight and note, but it's quite cumbersome to go back on them, and they are quite out of the context.</p>
-            <p>I will start with the book I'm reading now, and maybe I will update teh rest of this books in this list with 
-            all my notes and highlights (quotes of the book).</p>
-            <Book title={'Building microservices'} author={'Sam Newman'} amazonLink={'https://www.amazon.com/gp/product/B09B5L4NVT'}>
-                <p>The second edition.</p>
-                <p>So far I really really like this book. The easygoing approach discussing all options (as opposed
-                to some DDD books, or well, some people interpreting the DDD books as an absolute universal law)
-                and taking all *valid* options to building systems is very welcome.</p>
 
+            <Book title={'Kafka'} author={'need to check'} amazonLink={'https://www.amazon.com/gp/product/B09B5L4NVT'}>
+                <p>It's basically a propaganda pamphlet of Apache Kafka, but I am very eager to implement something with that
+                    I'll get a test, translate to rust, and to use apache kafka, with kubernetes while I'm  getting the certification.</p>
             </Book>
-            
             
             <h5>Domain Driven Design</h5>
             <Book title={'Domain-Driven Design: Tackling Complexity in the Heart of Software'} author={'Eric Evans'}
@@ -75,7 +77,20 @@ export default function BookContent() {
                 <p>I just wished that the example about CQRS + event sourcing would be a little bit extended, but well there are more books
                     about that and also open repos to check.</p>
             </Book>
-            <h5>DevOps</h5>
+            <h5>Big Picture (DevOps culture)</h5>
+            <Book title={'Building microservices'} author={'Sam Newman'} amazonLink={'https://www.amazon.com/gp/product/B09B5L4NVT'}>
+                <p>The second edition.</p>
+                <p>I really really like this book. The easygoing approach discussing all options (as opposed
+                    to some DDD books, or well, some people interpreting the DDD books as an absolute universal law)
+                    and taking all *valid* options to building systems is very welcome.</p>
+                <p>It's definitely a book to revisit often. I liked several of the patterns and general nuances
+                    explained here. While for some I already have them quite embedded in my line of thoughts, for
+                    example the event sourced kind of communication between services there are really great pieces of advice.</p>
+                <p>I liked the frontend for backend approach. I liked how it reasons that having a duplicate of the whole
+                    infra just for testing is probably not worth it and that for functional tests SLA should be enough, plus
+                    the actual testing in production.</p>
+                <p>And the most important quote of teh book probably is that one of the scientific method!</p>
+            </Book>
             <Book title={'The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Wina'}
                   author={'Gene Kim'} amazonLink={'https://www.amazon.com/gp/product/B078Y98RG8/ref=kinw_myk_ro_title'}>
                 <p>OMG! I couldn't stop reading this book. It was like, this is some message from above, and even
