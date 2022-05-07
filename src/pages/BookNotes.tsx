@@ -3,7 +3,7 @@ import MainContentTitle from "../components/maincontent/MainContentTitle";
 import BookDualMenu from "../components/book-dual-menu/BookDualMenu";
 import {BOOK_DDD_IN_PHP} from "../components/book-note/BookNotesDB1DDD_IN_PHP";
 import BookNote from "../components/book-note/BookNote";
-import {BOOK_IMPLEMENTING_DDD} from "../components/book-note/BookNotesDB2";
+import {BOOK_IMPLEMENTING_DDD} from "../components/book-note/BookNotesDB2IDDD";
 import BookTabs from "../components/book-tab/BookTabs";
 import BookTab from "../components/book-tab/BookTab";
 
