@@ -51,6 +51,12 @@ export default function SideHustle() {
                 <p>Also with CI/CD with github actions.</p>
             </TechProject>
             <TechProject
+                title={'Deploy Static React site in AWS CF and S3 GitHub Action'}
+                link={'https://github.com/eniltrexAdmin/deploy-static-aws-cf-s3-site-action'}
+                technologies={[TERRAFORM, GITHUB_ACTION ]} >
+                <p>Single Action to deploy a static site, like the one you are currently reading.</p>
+            </TechProject>
+            <TechProject
                 title={'Install Terraform GitHub Action'}
                 link={'https://github.com/eniltrexAdmin/install-terraform-github-action'}
                 technologies={[TERRAFORM, GITHUB_ACTION ]} >

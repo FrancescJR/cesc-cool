@@ -27,9 +27,8 @@ export default function BookContent() {
             
             <h5>Currently Reading</h5>
 
-            <Book title={'Kafka'} author={'need to check'} amazonLink={'https://www.amazon.com/gp/product/B09B5L4NVT'}>
-                <p>It's basically a propaganda pamphlet of Apache Kafka, but I am very eager to implement something with that
-                    I'll get a test, translate to rust, and to use apache kafka, with kubernetes while I'm  getting the certification.</p>
+            <Book title={'Terraform Up and Running'} author={'Yevgeniy Brikman'} amazonLink={'https://www.oreilly.com/library/view/terraform-up/9781492046899/'}>
+                <p>Let's see what the book says.</p>
             </Book>
             
             <h5>Domain Driven Design</h5>
@@ -133,6 +132,16 @@ export default function BookContent() {
                 <p>The most interesting part for me was how the IT department of a big company could be organized since
                     I never worked in a big IT company. And the only big "IT" company I worked in was obvious that they
                     got all of this wrong.</p>
+            </Book>
+
+            <h5>Misc</h5>
+            <Book title={'Designing Event Driven Systems'} author={'Ben Stopford'} amazonLink={'https://www.oreilly.com/library/view/designing-event-driven-systems/9781492038252/'}>
+                <p>There are two main concepts on this book. The first one is the mind shift changed to an event
+                    driven architecture, something that I think I already consolidated</p>
+                <p>The secon one is applying lots of patterns using Kafka features, but it's very hard to follow. There
+                    are some practical examples about CQRS but always using Kafka as the infra. It also explain how Kafka deal with
+                    several problems like atomicity in transactions using transactions, idempotency and horizontal scalability using
+                    data partition. All of this is in Kafka. All of this is also very confusing if you have never played with Kafka.</p>
             </Book>
 
             <h5>Wish list</h5>

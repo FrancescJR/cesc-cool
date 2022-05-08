@@ -1,13 +1,13 @@
 import React from 'react';
 import MainContentTitle from "../components/maincontent/MainContentTitle";
-import {BOOKS} from "../index";
+import {BOOKS, INTERNET_EXPOSURE} from "../index";
 
 
 export default function AboutMe() {
     return (
         <div>
             <MainContentTitle title={'About Me'} />
-            <h5>Short story</h5>
+            <h4>Short story</h4>
             <p>Hello! It is most certainly a pleasure to meet you.</p>
             <p>I am an engineer born and raised in Barcelona and seasoned in Japan for 5 years. My major
             is computer science and since I graduated I have been working on the development of full web applications
@@ -15,7 +15,7 @@ export default function AboutMe() {
                 a good devops mindset are the best tools to minimize technical debt and make the SCRUM velocity
                 of any team soar.</p>
 
-            <h5>Long story</h5>
+            <h4>Long story</h4>
             <p>I am an engineer - graduated on "informatics" which is computer science, but it is not computer science
                 as probably it is on USA, but anyway I graduated long time ago so that doesn't matter that much anymore</p>
             <p> I've been born and raised in Barcelona but my professional experience -without counting a long internship-
@@ -37,19 +37,22 @@ export default function AboutMe() {
                 are probably unrelated to the question at hand.</p>
             <p>There are a couple of things that define that make me different than the rest of the society. First of all
             I always assume that my colleagues, the other people walking on the street, that anybody else is better than
-            me and that they have the right to teach me stuff. A japanese trait probably, the worst thing you can do is
-            to annoy the others. The bad thing about that is that I also expect a similar approach from others and that's
-            rarely the case.</p>
+            me, at least in something. A japanese trait probably, the worst thing you can do is
+            to annoy the others. The bad thing about that is that I also expect a similar respect from others and that's
+            not always the case.</p>
             <p>The other differential trait is that I commonly take the scientific approach to solve problems/issues.
             What's that? I start by some hypothesis of what could the problem, then I design and experiment that proves
             or refutes my hypothesis, I gain this knowledge, and then I can finally solve the issue. I rarely solve an issue
             without being able to explain exactly what was happening. This approach normally takes longer, but it's worth it
             and with some experience on my shoulders I can go quite fast.</p>
-            <h5>F.A.Q. for hiring companies:</h5>
+            <h4>F.A.Q. for hiring companies:</h4>
+            <p>First of all, I am tired of technical challenges, so if you are really interested in me, please go
+                and <a href={'/' + INTERNET_EXPOSURE}>read the beginning of this page where I explain all
+            the technical challenges I did with the corresponding code in my GitHub.</a></p>
             <p>Recently recruiters ask me what am I looking for in a company. After seeing and working in a fair
             amount of them, the answer is quite extense, but here I will try to summarize the points that will
             make me motivate enough to work in a place.</p>
-            <h6>Environment</h6>
+            <h5>Environment</h5>
             <p>That is from my latest experiences, the environment is what makes me feel miserable going to work
             or what makes me thrive. It is crucial and should be carefully looked upon to get rid of certain
             behaviours.</p>
@@ -72,7 +75,7 @@ export default function AboutMe() {
             <p>Well to sum-up: safe environment. With proactive work to make it safe for real (doing the
                 bullet points above should be enough). If you are hiring
             and you do absolutely no action to make the environment safe, then it is as well as a not safe environment.</p>
-            <h6>Impact</h6>
+            <h5>Impact</h5>
             <p>On the <a href={'/' + BOOKS}>DevOps Handbook</a>, and also on <a href={'/' + BOOKS}>
                 Building Microservices</a> books it is explained how useful/profitable/great
                 it is to enable teams. Teams should have the whole stream and responsibility of a (part) of the
@@ -91,7 +94,7 @@ export default function AboutMe() {
             <p>There's way more things to say in here but I don't want to get out of the scope.</p>
             <p>Summing up: I want to have impact on a company, that either implies that the company is small or
             that the organization allows for it.</p>
-            <h6>Technologies</h6>
+            <h5>Technologies</h5>
             <p>Well, it's not secret that PHP is the world of Wordpress and CMS. It's hard to find proper DDD approaches
             in the PHP world. In Spain maybe the panorama is a little bit better thanks to codily.tv, but a reality
             is that PHP is probably the language where are the lowest-paying tech jobs (which is unfair in my opinion)</p>
@@ -108,7 +111,7 @@ export default function AboutMe() {
                 that never read a book in English think there's only one way of being right here,
                 it is very easy to find the egos and the toxic behaviours
             on this aspect, let's not fall into this trap and keep an open mind, shall we?).</p>
-            <h6>Language</h6>
+            <h5>Language</h5>
             <p> I am based in Spain and I speak Spanish, obviously, but for work I feel way more comfortable speaking
             in English. A big reason is that I believe all of the toxic behaviours go down a level when people are
             forced to use a a non-native language. And if it is, well, it's not native to me, so I might miss all
@@ -118,7 +121,7 @@ export default function AboutMe() {
             written there to Spanish. Maybe I'd do a better job translating to Catalan.</p>
             <p> Also, using English makes me feel that I am "at the edge". Not falling behind technical wise. That the
             company I am working for is advanced!</p>
-            <h6>Remote work policy</h6>
+            <h5>Remote work policy</h5>
             <p>The office should be mandatory only when it makes sense to go: some meetings, maybe on boardings
             and some other similar things. If you need to force people to go to the office... you have a problem.</p>
             <p>I am totally happy to go to the office to meet with the peers, and I like to go maybe once a week,
@@ -127,7 +130,7 @@ export default function AboutMe() {
             <p>I complete all the tasks that I am assigned on time always. There's no need to go to the office to prove
             that. To go a share a bathroom, to argue about the temperature of the office, and to commute (really,
             commuting feels so absurd at this time and age).</p>
-            <h6>Career trajectory</h6>
+            <h5>Career trajectory</h5>
             <p>This is mainly for the long term. But I won't stay in a company in which I don't see myself in the future.
             but well, I have my aspirations of both getting the "devops title" and eventually working for myself only.
             Can you make it attractive enough that I can do the same but working for you?</p>
@@ -140,7 +143,7 @@ export default function AboutMe() {
                 none of the books here mentioned not even once, to me that would be a red flag that the company is in a knowledge
                 cave, not aware of the industry standards.</p>
             <p>Imagine a non safe environment on a place where nobody read any of the books! Well, I've seen some!</p>
-            <h5>Stats</h5>
+            <h4>Stats</h4>
             <p>Full name: Francesc Travesa Centrich</p>
             <p>Email: name.lastname at gmail.com</p>
             <p>Color: brownish light, like Turkish</p>
