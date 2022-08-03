@@ -17,7 +17,7 @@ import {
     AWS,
     DRUPAL,
     VAGRANT,
-    LINUX_SYSADMIN
+    LINUX_SYSADMIN, LARAVEL
 } from "../components/tech-buzz-word/TechBuzzWordsDictionary";
 
 
@@ -29,13 +29,40 @@ export default function WorkingExperience() {
             >
                 <WorkingExperienceItem
                     isOpen={true}
+                    title={'Tech Leader'}
+                    company={'CMrad'}
+                    companyLink={'https://www.cmrad.com'}
+                    location={'Barcelona'}
+                    gmapsLink={'https://goo.gl/maps/cNwe71B9HbKzr5rg7'}
+                    fromDate={'March 2022'}
+                    endDate={'Present day'}
+                    eventKey="1"
+                >
+                    <p>I think officially I am a tech leader, but I don't want to push that too much. I am mainly
+                    in charge on bringin forward a join venture about vets while using the current product.</p>
+                    <p>The current product is a little bit legacy with Laravel and with so many parts that
+                        are outsourced that it's very hard to deal with, but as any company, the move to micros
+                        is wanted and I do know actually how to do it.</p>
+                    <p>I have a roadmap for that and I'm planning to go forward with it for as long as everybody is OK with that.</p>
+                    <p className={'tech-word-list'}>
+                        <TechBuzzWord indexDictionary={PHP} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={LARAVEL} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={DDD} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={EVENT_SOURCING} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={CQRS} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={TERRAFORM} selectedWords={[]} inSkillPage={false} />
+                        <TechBuzzWord indexDictionary={DOCKER} selectedWords={[]} inSkillPage={false} />
+                    </p>
+                </WorkingExperienceItem>
+                <WorkingExperienceItem
+                    isOpen={true}
                     title={'Senior Backend Developer'}
                     company={'Zinio'}
                     companyLink={'https://www.zinio.com/es'}
                     location={'Barcelona'}
                     gmapsLink={'https://goo.gl/maps/cNwe71B9HbKzr5rg7'}
                     fromDate={'December 2020'}
-                    endDate={'Present day'}
+                    endDate={'February 2022'}
                     eventKey="1"
                 >
                     <p>Developing new features and making myself responsible for a lot of code

@@ -6,6 +6,7 @@ export const REACT = 'React'
 export const SCSS = 'Sassy CSS';
 export const HTML = 'HTML';
 export const SYMFONY = 'Symfony';
+export const LARAVEL = 'Laravel';
 export const GIT = 'Git'
 export const ANSIBLE = 'Ansible';
 export const AWS ='AWS';
@@ -86,6 +87,15 @@ export const TECHNOLOGIES: {[key:string] : TechBuzzWordScaffolding}  = {
         'level': 5,
         'experience_description': 'Almost the same experience as I have with PHP. Unfortunately I have not been at the' +
             'latest and Symfony 6 is being released and I still need to learn the improvements of the 5!.'
+    },
+    [LARAVEL] : {
+        'name': LARAVEL,
+        'level': 4,
+        'experience_description': 'A lost of experience recently with cmrad. I don\'t know all the insides' +
+            'but I jumped in so deep that I feel quite comfortable now with it. Especially the backend side.' +
+            'Laravel has also frontend side which I mainly ignore. Laravel is good for prototype but quite' +
+            'but for everything else. Laravel users, use Lumen for god\'s sake, but above all, ditch eloquent!' +
+            'Eloquent is plainly an antipattern in itself being an active record ORM and not a data Mapper.'
     },
     [TYPESCRIPT] : {
         'name': TYPESCRIPT,
