@@ -1,7 +1,6 @@
 import React from 'react';
 import Book from "../components/book/Book";
 import MainContentTitle from "../components/maincontent/MainContentTitle";
-import BookDualMenu from "../components/book-dual-menu/BookDualMenu";
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 
@@ -19,7 +18,6 @@ export default function BookContent() {
     return (
         <div css={h5_css}>
             <MainContentTitle title={'Books'} />
-            <BookDualMenu notesActive={false}/>
             <p> This is a list of technical books that I have read and some of them re-read, that helped me shape
                 my beliefs and my points of views of what IT on every company -big, small, start-up etc- should be.</p>
 
@@ -27,9 +25,12 @@ export default function BookContent() {
             
             <h5>Currently Reading</h5>
 
-            <Book title={'Terraform Up and Running'} author={'Yevgeniy Brikman'} amazonLink={'https://www.oreilly.com/library/view/terraform-up/9781492046899/'}>
-                <p>Let's see what the book says.</p>
-            </Book>
+            <Book title={'The Kubernetes Book: 2022 Edition'}
+                  author={'nigel Poulton'}
+                  amazonLink={'https://www.amazon.com/gp/product/B072TS9ZQZ/ref=kinw_myk_ro_title'}
+            />
+            <p>never worked with kubernetes, but I'm about to in my own project.</p>
+
             
             <h5>Domain Driven Design</h5>
             <Book title={'Domain-Driven Design: Tackling Complexity in the Heart of Software'} author={'Eric Evans'}
@@ -76,6 +77,27 @@ export default function BookContent() {
                 <p>I just wished that the example about CQRS + event sourcing would be a little bit extended, but well there are more books
                     about that and also open repos to check.</p>
             </Book>
+
+            <Book title={'Practical Microservices: Build Event-Driven Architectures with Event Sourcing and CQRS'}
+                  author={'Ethan Garofolo'} amazonLink={'https://www.amazon.com/gp/product/B0899K5R4P/ref=kinw_myk_ro_title'}>
+                <p>Well that was more interesting than I thought it would be. I would recommend it to give it a try.</p>
+                <p>Now it's a very opinionated way about what a microservice is with working examples in typescript.</p>
+                <p>What would be an issue while doing this with different languages, it's no problem to use polling
+                    in typescript and add what the book explains as "components" and "aggregators" in a running system.
+                    If it wasn't for that, you'd have to deal with infra.</p>
+                <p>It also uses evenTide messageDB which is kind of a layer on top of an postgreSQL where you query
+                    this instead of the DB. All to not have to deal with infra that much.</p>
+                <p>There's no DDD not hexagonal architecture, but that it's not the point of this book. I am just
+                    happy I can now name some concepts (aggregators for once, they are dismissed as "projection creators" in
+                    all the  github codes I check, and well they can even have a different infra if one wanted...). Or it
+                    is interesting to save the commands in the message store -which maybe that was ok- it doesn't work
+                    that much this way in other code I see, but I always thought that the whole reason for the existence
+                    of a command is if what what was going to process them -in this book called components- lives in a different
+                    machine... well in this book they live in different thread subscribed to that</p>
+                <p>So yeah, it helped me to put some dots on the some i, and honestly I would not have expected that I'd come back so
+                    often to this book to check some stuff.</p>
+            </Book>
+
             <h5>Big Picture (DevOps culture)</h5>
             <Book title={'Building microservices'} author={'Sam Newman'} amazonLink={'https://www.amazon.com/gp/product/B09B5L4NVT'}>
                 <p>The second edition.</p>
@@ -119,6 +141,15 @@ export default function BookContent() {
                 <p>This book is simple and clear. Following the teachings is quite simple, the only problem that many
                     are kind of counterintuitive. And the other problem is that again it's me who's reading this book, and not
                     any CXX nor directory in my organization. And I can't be the one complaining all the time.</p>
+                <p>The reason upgrading my web page is so easy is because I follow the advice on this book.</p>
+            </Book>
+
+            <Book title={'Terraform Up and Running'} author={'Yevgeniy Brikman'} amazonLink={'https://www.oreilly.com/library/view/terraform-up/9781492046899/'}>
+                <p>I loved this book. It's not only about terraform, but a lot on how to use properly terraform,
+                and as a side effect how to properly manage with any IaC. How to make properly modules independent
+                and then reuse them per environments, test them. How to think properly about your infrastructure.. that's what book makes you</p>
+                <p>I come back often for chapter 6 where it shows a comprehensive checklist to deploy
+                any resource to production. Master piece.</p>
             </Book>
 
             <Book title={'Essential Scrum: A Practical Guide to the Most Popular Agile Process (Addison-Wesley Signature Series (Cohn))'}
@@ -144,7 +175,7 @@ export default function BookContent() {
                     data partition. All of this is in Kafka. All of this is also very confusing if you have never played with Kafka.</p>
             </Book>
 
-            <h5>Wish list</h5>
+            <h5>Waiting list</h5>
             <p>I have already purchased some books and some others are about to be. This is the list:</p>
             <Book title={'NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence'}
                   author={'Pramod J. Sadalage, Martin Fowler'}
@@ -158,6 +189,28 @@ export default function BookContent() {
                   author={'A bunch of them.'}
                   amazonLink={'https://www.amazon.com/gp/product/B07FWFPMYG/ref=kinw_myk_ro_title'}
             />
+            <Book title={'Learning Domain-Driven Design'}
+                  author={'Vlad Khononov'}
+                  amazonLink={'https://www.amazon.com/gp/product/B09J2CMJZY/ref=kinw_myk_ro_title'}
+            />
+            <p>I've read some chapters in it, it's veeery similar as the implementing DDD from Vaughn Vernon, with
+            different examples and I forgot in which language the examples where.</p>
+            <Book title={'Patterns, Principles, and Practices of Domain-Driven Design'}
+                  author={'Scott Millett'}
+                  amazonLink={'https://www.amazon.com/gp/product/B00XLYUA0W/ref=kinw_myk_ro_title'}
+            />
+            <Book title={'Software Engineering at Google: Lessons Learned from Programming Over Time'}
+                  author={'Titus Winters'}
+                  amazonLink={'https://www.amazon.com/gp/product/B0859PF5HB/ref=kinw_myk_ro_title'}
+            />
+            <p>I hate the elitism of Google, and they use monorrepo which is nonsensical, but well,
+                it's one of the greatest tech companies in the world or maybe just the greatest.. so let's see..
+            I still need to read the SRE book too...</p>
+            <Book title={'Effective Kafka: A Hands-On Guide to Building Robust and Scalable Event-Driven Applications with Code Examples in Java'}
+                  author={'Emil Koutanov'}
+                  amazonLink={'https://www.amazon.com/gp/product/B0861WN4YS/ref=kinw_myk_ro_title'}
+            />
+
             <Book title={'RESTful API Design: Best Practices in API Design with REST (API-University Series Book 3)\n'}
                   author={'Matthias Biehl'}
                   amazonLink={'https://www.amazon.com/gp/product/B01L6STMVW/ref=kinw_myk_ro_title'}
