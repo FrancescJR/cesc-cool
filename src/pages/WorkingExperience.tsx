@@ -39,7 +39,7 @@ export default function WorkingExperience() {
                     eventKey="1"
                 >
                     <p>I think officially I am a tech leader, but I don't want to push that too much. I am mainly
-                    in charge on bringin forward a join venture about vets while using the current product.</p>
+                    in charge on bringing forward a join venture about vets while using the current product.</p>
                     <p>The current product is a little bit legacy with Laravel and with so many parts that
                         are outsourced that it's very hard to deal with, but as any company, the move to micros
                         is wanted and I do know actually how to do it.</p>
