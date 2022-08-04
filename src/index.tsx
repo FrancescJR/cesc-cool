@@ -7,8 +7,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export const ABOUT = 'about';
+export const FAQRecruiters = 'faq';
 export const WORKING_EXPERIENCE = 'working_experience';
 export const SIDE_HUSTLE = 'side_hustle'
+export const CODE_REPOS = 'repositories';
 export const SKILLS = 'skills';
 export const BOOKS = 'books';
 export const INTERNET_EXPOSURE = 'internet-exposure';
@@ -21,8 +23,10 @@ ReactDOM.render(
       <BrowserRouter>
           <Routes>
               <Route path={"/"} element={<Site route={ABOUT} />} />
+              <Route path={"/" + FAQRecruiters} element={<Site route={FAQRecruiters} />} />
               <Route path={"/" + WORKING_EXPERIENCE} element={<Site route={WORKING_EXPERIENCE} />} />
               <Route path={"/" + SIDE_HUSTLE} element={<Site route={SIDE_HUSTLE} />} />
+              <Route path={"/" + CODE_REPOS} element={<Site route={CODE_REPOS} />} />
               <Route path={"/" + SKILLS} element={<Site route={SKILLS} />} />
               <Route path={"/" + BOOKS} element={<Site route={BOOKS} />} />
               <Route path={"/" + INTERNET_EXPOSURE} element={<Site route={INTERNET_EXPOSURE} />} />

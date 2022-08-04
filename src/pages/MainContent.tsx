@@ -1,9 +1,20 @@
 import React from 'react';
 import styled from "styled-components";
 import {siteProps} from "./Site";
-import {ABOUT, WORKING_EXPERIENCE, SIDE_HUSTLE, SKILLS, BOOKS, EDUCATION, INTERNET_EXPOSURE, LANGUAGES} from "../index";
+import {
+    ABOUT,
+    WORKING_EXPERIENCE,
+    SIDE_HUSTLE,
+    SKILLS,
+    BOOKS,
+    EDUCATION,
+    INTERNET_EXPOSURE,
+    LANGUAGES,
+    FAQRecruiters, CODE_REPOS
+} from "../index";
 
 import WorkingExperience from "./WorkingExperience";
+import FAQRecruitersPage  from "./FAQrecruiters";
 import AboutMe from "./AboutMe";
 import SideHustle from "./SideHustle";
 import Skills from "./Skills";
@@ -11,6 +22,7 @@ import Education from "./Education";
 import InternetExposure from "./InternetExposure";
 import Languages from "./Languages";
 import BookPage from "./BookPage";
+import CodeRepos from "./CodeRepos";
 
 const PublicContentDiv = styled.div`
 width: auto;
@@ -29,12 +41,20 @@ export default function MainContent(props: siteProps) {
             contentToRender = <AboutMe/>;
             break;
         }
+        case FAQRecruiters: {
+            contentToRender = <FAQRecruitersPage/>;
+            break;
+        }
         case WORKING_EXPERIENCE: {
             contentToRender = <WorkingExperience/>;
             break;
         }
         case SIDE_HUSTLE: {
             contentToRender = <SideHustle/>;
+            break;
+        }
+        case CODE_REPOS: {
+            contentToRender = <CodeRepos/>;
             break;
         }
         case SKILLS: {

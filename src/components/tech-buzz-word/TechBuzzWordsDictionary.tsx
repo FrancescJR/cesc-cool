@@ -325,8 +325,20 @@ export const TECHNOLOGIES: {[key:string] : TechBuzzWordScaffolding}  = {
     },
     [CQRS] : {
         'name': CQRS,
-        'level': 3,
-        'experience_description': 'Working on it right now... slowly learning and understanding it.'
+        'level': 4,
+        'experience_description': 'I still need to have that in production, but I have read now enough books and seen' +
+            'enough that I feel confident about it. I can even decide whether I want to use together with ES or not.' +
+            'This is an email I sent to myself while working with a Rust CQRS project of mine trying to mix together' +
+            'the book from Garofolo, the cqrs-rust docs and what I\'ve seen prior:' +
+            'I like the command in the domain;\n' +
+            'An aggregate +a command souls emit xx events. -> that\'s the Component part... Mmmh the whole thing is the component. ( Init with empty state, load from all the events, domain That has applyXXevent) The app is what I don\'t do for as long as I don\'t persist the commands... Too much infra... So synchronous command to componen.' +
+            'On the query side yes I\'ll have the app.' +
+            'I need the aggregator part, i should call it aggregator...\n' +
+            '\n' +
+            'Final word m this is event sourcing as truth of source. I can still have cqrs without event sourcing, I just need the aggregator, commands fire domain events, no need to save em, (better if i do though) and an aggregator that creates/generares the views... Aggregators can also live in a complete different infra (the same as the apps). Dispatching or polling, polling is better so you can start from the event 0...\n' +
+            '\n' +
+            'Thinking then why ES is at all necessary. For pijadas like get the state of the aggregate at that point in time, but that can also be implemented independently. Can I execute a command without loading via ES, just by quering the aggregate like always?... Yes, you just need to have a "regular" db which you\'ll probably have as the view will be like that'
+
     },
     [EVENT_SOURCING] : {
         'name': EVENT_SOURCING,
@@ -380,8 +392,8 @@ export const TECHNOLOGIES: {[key:string] : TechBuzzWordScaffolding}  = {
     [SERVERLESS] : {
         'name': SERVERLESS,
         'level': 3,
-        'experience_description': 'Darling, there is no such thing as serverless. What you thing is something' +
-            'serverless, like a lambda, is nothing more than a docker with an Nginx installed. But see Lambdas.'
+        'experience_description': 'Darling, there is no such thing as serverless. When you see something' +
+            'serverless, like a lambda, it is nothing more than a docker with an Nginx installed. But see Lambdas.'
     },
     [SEO] : {
         'name': SEO,
@@ -397,12 +409,15 @@ export const TECHNOLOGIES: {[key:string] : TechBuzzWordScaffolding}  = {
     [GO] : {
         'name': GO,
         'level': 1,
-        'experience_description': 'The same aas RUST.'
+        'experience_description': 'I guess I\'ll know more when I start testing my terraform modules with that.' +
+            'I am planning to have one of my repos on rust to port them in Go too.'
     },
     [RUST] : {
         'name': RUST,
-        'level': 1,
-        'experience_description': 'I actually wish I knew, and to develop things with that.'
+        'level': 3,
+        'experience_description': 'Getting better, still I am missing the "philosophy" and trying to us hierarchy and ' +
+            'others things that are not in rust paradigm, and probably I am misusing traits, but hang in there. I am ' +
+            'probably one of the few people that use DDD patterns in rust.'
     },
     [SSH] : {
         'name': SSH,
