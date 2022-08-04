@@ -1,6 +1,5 @@
 import React from 'react';
 import TechBuzzWord from "../tech-buzz-word/TechBuzzWord";
-import styled from "styled-components";
 
 interface RepoProps {
     title: string;
