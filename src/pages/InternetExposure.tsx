@@ -1,6 +1,6 @@
 import React from 'react';
 import MainContentTitle from "../components/maincontent/MainContentTitle";
-import {BOOKS, SIDE_HUSTLE} from "../index";
+import { CODE_REPOS, SIDE_HUSTLE} from "../index";
 
 
 
@@ -9,20 +9,19 @@ export default function InternetExposure() {
         <div>
             <MainContentTitle title={'Public me'} />
             <h4>GitHub</h4>
-            <p>For my personal projects, and some from my side hustle (see <a href={"/" + SIDE_HUSTLE}>here</a>) this is my github:
-            <a target="_blank" rel="noreferrer" href={'https://github.com/FrancescJR'} >https://github.com/FrancescJR</a></p>
-            <p>There are also some technical challenges completed. All of them I did before actually reading all the books
-             from <a href={'/' + BOOKS}>here</a>.</p>
-            <p>
-                They are in general quite OK for my point of view. Probably I am missing here and there some technique that
-                would make them better, but I don't think I am doing anything wrong on those (until I review them, which
-                I haven't yet). There are no examples of event sourcing or CQRS for example, but, again,
-                nothing wrong in there - so far- that's why I am not embarrassed to show them.</p>
-            <p><a href={"https://github.com/FrancescJR/collective-minds-challenge"}>This one</a> might be the best so far.
-            I already thought of a slightly better solution, but it's the latest test I did. I was actually plannign to use
-            this one for myself to have some examples at hand - so I want to add event sourcing approach, CQRS and others.
-            Only that the test itself, as you can understand by the readme I wrote, has little sense. But since it's the
-            latest I did, it still the better, at least from my point of view.</p>
+            <p>This is my github: <a target="_blank" rel="noreferrer" href={'https://github.com/FrancescJR'} >
+                https://github.com/FrancescJR
+                </a>
+            </p>
+            <p>And this is my <a href={"/" + SIDE_HUSTLE}> side hustle</a> Github:
+                <a target="_blank" rel="noreferrer" href={'https://github.com/eniltrexAdmin'} >
+                    https://github.com/eniltrexAdmin
+                </a>
+            </p>
+            <p>Some of the repos are private though. <a href={"/" + CODE_REPOS}>Check this page</a> for a comprehensive list of the most important repositories
+                I have public.
+            </p>
+
             <h4>Social Media</h4>
             <p>I am not much active on social media. I reply linkedIn messages and I post from time to time
             on Instagram. Facebook is there to keep some contacts, but a part from that is like I don't have it.</p>
