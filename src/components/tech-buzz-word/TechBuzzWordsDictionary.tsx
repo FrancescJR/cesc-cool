@@ -43,15 +43,17 @@ export const KUBERNETES = 'Kubernetes';
 export const DDD = 'Domain Driven Design';
 export const CQRS = 'CQRS';
 export const EVENT_SOURCING = 'Event Sourcing';
+export const HEX_ARC = 'Hexagonal Architecture';
 export const WORDPRESS = 'Wordpress';
 export const GO = 'GoLang';
 export const RUST = 'Rust';
 export const BASH = 'Bash Script';
 export const SSH = 'SSH'
 export const GITHUB_ACTION = 'GitHub Actions';
+export const CI_CD = 'CI/CD';
 export const DOCKER = 'Docker';
 export const JENKINS = 'Jenkins';
-export const AWS_WILDCARD = 'The rest of AWS';
+export const AWS_WILDCARD = 'AWS services';
 export const PHP_CMS_WILDCARD = 'The rest of CMS';
 export const PHP_UNIT = 'PHP unit';
 export const VAGRANT = 'Vagrant';
@@ -155,6 +157,12 @@ export const TECHNOLOGIES: {[key:string] : TechBuzzWordScaffolding}  = {
         'level': 5,
         'experience_description': 'I normally give help to others on GIT commands etc. I always dodged and GUI interface of ' +
             'it and I think that makes a difference understanding what you are really doing.'
+    },
+    [CI_CD] : {
+        'name': CI_CD,
+        'level': 3,
+        'experience_description': 'It\'s maybe the most complicating part of devops, so easy to reach to metaprogramming.' +
+            'I have to admit that I am missing some lectures about it.'
     },
     [AWS] : {
         'name': AWS,
@@ -321,7 +329,7 @@ export const TECHNOLOGIES: {[key:string] : TechBuzzWordScaffolding}  = {
         'name': DDD,
         'level': 5,
         'experience_description': 'Just see the books I read. Not that I know all of them by heart, but almost... Enough' +
-            'to realize when somebody is just being pretentious focusing on things that don\'t really matter.'
+            ' to know what to do in almost any situation.'
     },
     [CQRS] : {
         'name': CQRS,
@@ -343,7 +351,17 @@ export const TECHNOLOGIES: {[key:string] : TechBuzzWordScaffolding}  = {
     [EVENT_SOURCING] : {
         'name': EVENT_SOURCING,
         'level': 4,
-        'experience_description': 'Same as CQRS, but well, by default there are no projections here, so it\'s easier!'
+        'experience_description': 'Same as CQRS, but well, by default there are no projections here, so it\'s easier!' +
+            '.. depending on the book you read. For some people, projections are actually the result of the aggregate ' +
+            'after applying all of its events.'
+    },
+    [HEX_ARC] : {
+        'name': HEX_ARC,
+        'level': 5,
+        'experience_description': 'Basically I can not develop in another paradigm that is not ports and adapters. ' +
+            'I get quite amazed how many repos though, especially on the "new" programming languages such as RUST or Typescript' +
+            'do not even mention this architecture, but they do speak about domain driven design... I am making an effort' +
+            ' to apply this in Rust backend projects I am doing.'
     },
     [LOVE_2D] : {
         'name': LOVE_2D,

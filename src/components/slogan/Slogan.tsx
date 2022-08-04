@@ -11,7 +11,8 @@ const  SLOGANS:string[]  = [
     ' Sometimes I feel like I can\'t help but to annoy others just by my mere existence...',
     'Circumstances differentiate us more than genetics.',
     'You might have guessed I am more a backend guy than a frontend one...',
-    'I get wrong often, I correct myself, not a big deal.'
+    'I get wrong often, I correct myself, not a big deal.',
+    'Some of the sentences here are quite stupid.'
 ];
 
 export default function Slogan() {
