@@ -21,15 +21,18 @@ export default function BookContent() {
             <p> This is a list of technical books that I have read and some of them re-read, that helped me shape
                 my beliefs and my points of views of what IT on every company -big, small, start-up etc- should be.</p>
 
-            <p>You can consider this list of books part of my education.</p>
+            <p>You can consider this list of books part of my education. This list is growing and growing!</p>
             
             <h5>Currently Reading</h5>
+            <Book title={'Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation (Addison-Wesley Signature Series (Fowler))'} author={'Jez Humble David Farley'}
+                  amazonLink={'https://www.amazon.com/gp/product/B003YMNVC0'}>
+                <p>I shouldn't have waited that long to read this book. Just the first chapter already helped
+                me realize many things I was doing wrong! I would have written way less <a  target="_blank" rel="noreferrer" href="https://blog.cesc.cool/self-hosted-infrastructure-on-aws-with-terraform-part4">
+                        on this blog post</a> if it wasn't for this book.</p>
+                <p>"Jokes" a part, this is one of the big books. I find it so far very similar to the DevOps Handbook below.
+                Golden advice.</p>
+            </Book>
 
-            <Book title={'The Kubernetes Book: 2022 Edition'}
-                  author={'nigel Poulton'}
-                  amazonLink={'https://www.amazon.com/gp/product/B072TS9ZQZ/ref=kinw_myk_ro_title'}
-            />
-            <p>never worked with kubernetes, but I'm about to in my own project.</p>
 
             
             <h5>Domain Driven Design</h5>
@@ -97,6 +100,13 @@ export default function BookContent() {
                 <p>So yeah, it helped me to put some dots on the some i, and honestly I would not have expected that I'd come back so
                     often to this book to check some stuff.</p>
             </Book>
+            <Book title={'Versioning in an Event Sourced System'} author={'Gregory Young'} amazonLink={'https://leanpub.com/esversioning'}>
+                <p>I think he's the inventor of CQRS.</p>
+                <p>This book is also pure gold, even though it's unfinished. It also doesn't take DDD as a religion for fanatics.</p>
+                <p>Hard part for me though was to follow it, some vocabulary, at not being experienced with ES systems, made
+                me wonder a lot; is the projection the view data or the reconstruction of the aggregate? It quite often
+                could mean both, which confused me quite a big deal!</p>
+            </Book>
 
             <h5>Big Picture (DevOps culture)</h5>
             <Book title={'Building microservices'} author={'Sam Newman'} amazonLink={'https://www.amazon.com/gp/product/B09B5L4NVT'}>
@@ -152,6 +162,24 @@ export default function BookContent() {
                 any resource to production. Master piece.</p>
             </Book>
 
+            <Book title={'PHP microservices'} author={'Carlos Perez Sanchez, Pablo Solar Vilarino'} amazonLink={'https://www.packtpub.com/product/php-microservices/9781787125377'}>
+                <p>Luckily I didn't buy this book. My company did and I just read it.</p>
+                <p>This book is better than no book. But this has been written on 2017 so I would strongly recommend
+                    to read Building Microservices from Sam Newman instead.</p>
+                <p>Good parts: working implementation with Consul and Autopilot. Very complete on all aspects, with
+                    instructions on how to use testing tools etc.</p>
+                <p>Bad parts: for one side all of this is kind of obsolete, this has been replaced by the cloud, which
+                    it's just spoken about it very superficially.</p>
+                <p>Domain driven design is just explained superficially, without much knowledge, no hexagonal architecture
+                    on the code examples, which, by the way, they are a good example of spaghetti code, almost no SOLID principle
+                    is respected on those. To top it, there's a couple of time the sentence "remember you can share database
+                    in microservices" is repeated. I just hope they forgot to specify that they were speaking about the
+                    database infrastructure, and inside, having separate virtual databases. But it's not specified, and that's
+                    a very harmful advice, you will develop a distributed monolith this way!!!</p>
+                <p>Get this book only if you know already what you are doing, which in that case, you won't be interested
+                    on obsolete implementations of stuff....</p>
+            </Book>
+
             <Book title={'Essential Scrum: A Practical Guide to the Most Popular Agile Process (Addison-Wesley Signature Series (Cohn))'}
                   author={'Rubin Kenneth S'} amazonLink={'https://www.amazon.com/gp/product/B008NAKA5O/ref=kinw_myk_ro_title'}
             >
@@ -166,62 +194,128 @@ export default function BookContent() {
             </Book>
 
             <h5>Misc</h5>
+            <Book title={'The Robert C. Martin Clean Code Collection (Collection) (Robert C. Martin Series) '} author={'Uncle Bob'}
+                  amazonLink={'https://www.amazon.com/gp/product/B00666M59G'}>
+                <p>Should I explain this book?</p>
+                <p>I haven't yet read "the clean coder" though.</p>
+            </Book>
+
+            <Book title={'Zero To Production In Rust'} author={'Luca Palmieri'} amazonLink={'https://app.gumroad.com/d/40684410d99d242f75b4a96b2bc87835'}>
+                <p>This book helped me greatly by getting started with Rust way faster than anything else could have.
+                Maybe by having the author himself next to me.</p>
+                <p><a href={'https://github.com/FrancescJR/rust-actix-basic-miro'}>My Rust project skeleton</a> is highly
+                based on that. That's why I use actix...</p>
+                <p>Bad parts are the missing domain driven design and hexagonal architecture patterns that I had to
+                figure out by myself. Take a look at <a href={"https://github.com/eniltrexAdmin/crappy-user"}>this</a> if you are interested.</p>
+                <p>But in general the code and the implementations there are quite solid, so no much complaining about this book.</p>
+            </Book>
+
             <Book title={'Designing Event Driven Systems'} author={'Ben Stopford'} amazonLink={'https://www.oreilly.com/library/view/designing-event-driven-systems/9781492038252/'}>
                 <p>There are two main concepts on this book. The first one is the mind shift changed to an event
                     driven architecture, something that I think I already consolidated</p>
-                <p>The secon one is applying lots of patterns using Kafka features, but it's very hard to follow. There
+                <p>The second one is applying lots of patterns using Kafka features, but it's very hard to follow. There
                     are some practical examples about CQRS but always using Kafka as the infra. It also explain how Kafka deal with
                     several problems like atomicity in transactions using transactions, idempotency and horizontal scalability using
                     data partition. All of this is in Kafka. All of this is also very confusing if you have never played with Kafka.</p>
             </Book>
 
+
+
+
             <h5>Waiting list</h5>
-            <p>I have already purchased some books and some others are about to be. This is the list:</p>
-            <Book title={'NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence'}
-                  author={'Pramod J. Sadalage, Martin Fowler'}
-                  amazonLink={'https://www.amazon.com/gp/product/B0090J3SYW/ref=kinw_myk_ro_title'}
-            />
-            <Book title={'Site Reliability Engineering: How Google Runs Production Systems'}
-                  author={'Niall Richard Murphy, Betsy Beyer, Chris Jones, Jennifer Petoff'}
-                  amazonLink={'https://www.amazon.com/gp/product/B01DCPXKZ6/ref=kinw_myk_ro_title'}
-            />
-            <Book title={'The Site Reliability Workbook: Practical Ways to Implement SRE'}
-                  author={'A bunch of them.'}
-                  amazonLink={'https://www.amazon.com/gp/product/B07FWFPMYG/ref=kinw_myk_ro_title'}
-            />
-            <Book title={'Learning Domain-Driven Design'}
-                  author={'Vlad Khononov'}
-                  amazonLink={'https://www.amazon.com/gp/product/B09J2CMJZY/ref=kinw_myk_ro_title'}
-            />
-            <p>I've read some chapters in it, it's veeery similar as the implementing DDD from Vaughn Vernon, with
-            different examples and I forgot in which language the examples where.</p>
-            <Book title={'Patterns, Principles, and Practices of Domain-Driven Design'}
-                  author={'Scott Millett'}
-                  amazonLink={'https://www.amazon.com/gp/product/B00XLYUA0W/ref=kinw_myk_ro_title'}
-            />
-            <Book title={'Software Engineering at Google: Lessons Learned from Programming Over Time'}
-                  author={'Titus Winters'}
-                  amazonLink={'https://www.amazon.com/gp/product/B0859PF5HB/ref=kinw_myk_ro_title'}
-            />
-            <p>I hate the elitism of Google, and they use monorrepo which is nonsensical, but well,
-                it's one of the greatest tech companies in the world or maybe just the greatest.. so let's see..
-            I still need to read the SRE book too...</p>
-            <Book title={'Effective Kafka: A Hands-On Guide to Building Robust and Scalable Event-Driven Applications with Code Examples in Java'}
-                  author={'Emil Koutanov'}
-                  amazonLink={'https://www.amazon.com/gp/product/B0861WN4YS/ref=kinw_myk_ro_title'}
-            />
-
-            <Book title={'RESTful API Design: Best Practices in API Design with REST (API-University Series Book 3)\n'}
-                  author={'Matthias Biehl'}
-                  amazonLink={'https://www.amazon.com/gp/product/B01L6STMVW/ref=kinw_myk_ro_title'}
-            ><p>
-                I have my doubts about this one. I am not sure if I will get something extra a part of what you can
-                find out on the internet. But well, book always give you a very deep point of view that you don't
-                need to consult -that often- the proper way because you eventually know it deep inside.
-            </p></Book>
-            <p>Finally I am missing a book of event sourcing and CQRS by Mr.Young that I found somewhere, and this
-                one is the next one on my list for real, since right now we are implementing that.</p>
-
+            <p>I have already purchased some books and some others are about to be. This is the list on the
+                order I am planning to read them:</p>
+            <ol>
+                <li>
+                    <Book title={'Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations'}
+                          author={'Nicole Forsgreen, Jez Humble, Gene Kim'}
+                          amazonLink={'https://www.amazon.com/gp/product/B07B9F83WM'}
+                    />
+                </li>
+                <li>
+                    <Book title={'CQRS by example'}
+                          author={'Carlos Buenosvinos, Christian Soronellas, Keyvan Akbary'}
+                          amazonLink={'https://leanpub.com/cqrs-by-example'}
+                    />
+                </li>
+                <li>
+                    <Book title={'Build APIs You Won\'t Hate'}
+                          author={'Phil Sturgeon, Ashley Hockney'}
+                          amazonLink={'https://www.amazon.com/gp/product/B07HNFVRNH'}
+                    />
+                </li>
+                <li>
+                    <Book title={'The Kubernetes Book: 2022 Edition'}
+                          author={'Nigel Poulton'}
+                          amazonLink={'https://www.amazon.com/gp/product/B072TS9ZQZ/ref=kinw_myk_ro_title'}
+                    ><p>never worked with kubernetes, but I'm about to in my own project.</p>
+                    </Book>
+                </li>
+                <li>
+                    <Book title={'Clean Architecture: A Craftsman\'s Guide to Software Structure and Design'}
+                          author={'Uncle Bob'}
+                          amazonLink={'https://www.amazon.com/gp/product/B075LRM681'}
+                    />
+                </li>
+                <li>
+                    <Book title={'Site Reliability Engineering: How Google Runs Production Systems'}
+                          author={'Niall Richard Murphy, Betsy Beyer, Chris Jones, Jennifer Petoff'}
+                          amazonLink={'https://www.amazon.com/gp/product/B01DCPXKZ6/ref=kinw_myk_ro_title'}
+                    />
+                </li>
+                <li>
+                    <Book title={'The Site Reliability Workbook: Practical Ways to Implement SRE'}
+                          author={'A bunch of them.'}
+                          amazonLink={'https://www.amazon.com/gp/product/B07FWFPMYG/ref=kinw_myk_ro_title'}
+                    />
+                </li>
+                <li>
+                    <Book title={'NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence'}
+                          author={'Pramod J. Sadalage, Martin Fowler'}
+                          amazonLink={'https://www.amazon.com/gp/product/B0090J3SYW/ref=kinw_myk_ro_title'}
+                    />
+                </li>
+                <li>
+                    <Book title={'Learning Domain-Driven Design'}
+                          author={'Vlad Khononov'}
+                          amazonLink={'https://www.amazon.com/gp/product/B09J2CMJZY/ref=kinw_myk_ro_title'}
+                    ><p>I've read some chapters in it, it's veeery similar as the implementing DDD from Vaughn Vernon, with
+                        different examples and I forgot in which language the examples where.</p>
+                    </Book>
+                </li>
+                <li>
+                    <Book title={'Patterns, Principles, and Practices of Domain-Driven Design'}
+                          author={'Scott Millett'}
+                          amazonLink={'https://www.amazon.com/gp/product/B00XLYUA0W/ref=kinw_myk_ro_title'}
+                    ><p>It also looks very similar to the above book actually...</p>
+                    </Book>
+                </li>
+                <li>
+                    <Book title={'Software Engineering at Google: Lessons Learned from Programming Over Time'}
+                          author={'Titus Winters'}
+                          amazonLink={'https://www.amazon.com/gp/product/B0859PF5HB/ref=kinw_myk_ro_title'}
+                    > <p>I hate the elitism of Google, and they use monorepo which is nonsensical, but well,
+                        it's one of the greatest tech companies in the world or maybe just the greatest.. so let's see..
+                        I still need to read the SRE book too...</p>
+                    </Book>
+                </li>
+                <li>
+                    <Book title={'Effective Kafka: A Hands-On Guide to Building Robust and Scalable Event-Driven Applications with Code Examples in Java'}
+                          author={'Emil Koutanov'}
+                          amazonLink={'https://www.amazon.com/gp/product/B0861WN4YS/ref=kinw_myk_ro_title'}
+                    />
+                </li>
+                <li>
+                    <Book title={'RESTful API Design: Best Practices in API Design with REST (API-University Series Book 3)\n'}
+                          author={'Matthias Biehl'}
+                          amazonLink={'https://www.amazon.com/gp/product/B01L6STMVW/ref=kinw_myk_ro_title'}
+                    ><p>
+                        I have my doubts about this one. I am not sure if I will get something extra a part of what you can
+                        find out on the internet. But well, book always give you a very deep point of view that you don't
+                        need to consult -that often- the proper way because you eventually know it deep inside.
+                    </p></Book>
+                </li>
+            </ol>
         </div>
     );
 }
