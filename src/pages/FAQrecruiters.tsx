@@ -12,6 +12,25 @@ export default function FAQRecruitersPage() {
                 and <a href={'/' + CODE_REPOS}>where my work is available for your scrutiny.</a></p>
             <p>Often recruiters ask me the same exact things so they can somehow "profile me". Let me try to summarize
                 what I am looking for in a company, so you can properly "profile" me:</p>
+            <h5>Impact</h5>
+            <p>On the <a href={'/' + BOOKS}>DevOps Handbook</a>, and also on <a href={'/' + BOOKS}>
+                Building Microservices</a> books it is explained how useful/profitable/great
+                it is to enable teams. Teams should have the whole stream and responsibility of a (part) of the
+                product, from frontend to the infra. If the company has a single team, then this is pretty much the
+                only way of working.</p>
+            <p>That is not the same on big companies. Technical divisions of frontends/backends/devops/DBA and any
+                other division on any other technical concern is simply a mistake, a bad decision.</p>
+            <p>I know that by experience, where it doesn't matter how much effort you put on a task that it might
+                even become obsolete before reaching production. Companies that are organized like that just give frustration
+                to all of its employees.</p>
+            <p>Now, managers that don't see this problems shouldn't be managers at all. You can accept how things are
+                when you join a company, but there should be some proactive steps to make teams responsible of the
+                whole work stream. And keep being better at it. Keep pushing the responsibility inside a single team.
+                You will find the next step on changes on the organization that needs to be done, until you can finally
+                reach totally autonomous teams. Teams not being autonomous should be the first priority to address.</p>
+            <p>There's way more things to say in here but I don't want to get out of the scope.</p>
+            <p>Summing up: I want to have impact on a company, that either implies that the company is small or
+                that the organization allows for it.</p>
             <h5>Environment</h5>
             <p>That is from my latest experiences, the environment is what makes me feel miserable going to work
                 or what makes me thrive. It is crucial and should be carefully looked upon to get rid of certain
@@ -35,25 +54,6 @@ export default function FAQRecruitersPage() {
             <p>Well to sum-up: safe environment. With proactive work to make it safe for real (doing the
                 bullet points above should be enough). If you are hiring
                 and you do absolutely no action to make the environment safe, then it is as well as a not safe environment.</p>
-            <h5>Impact</h5>
-            <p>On the <a href={'/' + BOOKS}>DevOps Handbook</a>, and also on <a href={'/' + BOOKS}>
-                Building Microservices</a> books it is explained how useful/profitable/great
-                it is to enable teams. Teams should have the whole stream and responsibility of a (part) of the
-                product, from frontend to the infra. If the company has a single team, then this is pretty much the
-                only way of working.</p>
-            <p>That is not the same on big companies. Technical divisions of frontends/backends/devops/DBA and any
-                other division on any other technical concern is simply a mistake, a bad decision.</p>
-            <p>I know that by experience, where it doesn't matter how much effort you put on a task that it might
-                even become obsolete before reaching production. Companies that are organized like that just give frustration
-                to all of its employees.</p>
-            <p>Now, managers that don't see this problems shouldn't be managers at all. You can accept how things are
-                when you join a company, but there should be some proactive steps to make teams responsible of the
-                whole work stream. And keep being better at it. Keep pushing the responsibility inside a single team.
-                You will find the next step on changes on the organization that needs to be done, until you can finally
-                reach totally autonomous teams. Teams not being autonomous should be the first priority to address.</p>
-            <p>There's way more things to say in here but I don't want to get out of the scope.</p>
-            <p>Summing up: I want to have impact on a company, that either implies that the company is small or
-                that the organization allows for it.</p>
             <h5>Technologies</h5>
             <p>Well, it's not secret that PHP is the world of Wordpress and CMS. It's hard to find proper DDD approaches
                 in the PHP world. In Spain maybe the panorama is a little bit better thanks to codily.tv, but a reality
@@ -76,7 +76,7 @@ export default function FAQRecruitersPage() {
                 in English. A big reason is that I believe all of the toxic behaviours go down a level when people are
                 forced to use a a non-native language. And if it is, well, it's not native to me, so I might miss all
                 the toxic nuances that one might say when using English, so it's all for the best in any case.</p>
-            <p>When I reason a discuss and try to find solution, I normally quote the books or use the same reasoning,
+            <p>When I reason and discuss and try to find solution, I normally quote the books or use the same reasoning,
                 those books are written in English, and somehow I think I do a terrible job translating the intentions
                 written there to Spanish. Maybe I'd do a better job translating to Catalan.</p>
             <p> Also, using English makes me feel that I am "at the edge". Not falling behind technical wise. That the

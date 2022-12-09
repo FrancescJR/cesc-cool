@@ -24,14 +24,13 @@ export default function BookContent() {
             <p>You can consider this list of books part of my education. This list is growing and growing!</p>
             
             <h5>Currently Reading</h5>
-            <Book title={'Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation (Addison-Wesley Signature Series (Fowler))'} author={'Jez Humble David Farley'}
-                  amazonLink={'https://www.amazon.com/gp/product/B003YMNVC0'}>
-                <p>I shouldn't have waited that long to read this book. Just the first chapter already helped
-                me realize many things I was doing wrong! I would have written way less <a  target="_blank" rel="noreferrer" href="https://blog.cesc.cool/self-hosted-infrastructure-on-aws-with-terraform-part4">
-                        on this blog post</a> if it wasn't for this book.</p>
-                <p>"Jokes" a part, this is one of the big books. I find it so far very similar to the DevOps Handbook below.
-                Golden advice.</p>
+            <Book title={'CQRS by Example'} author={'Carlos buenosvinos, Christian Soronellas, Keyvan Akbary'}
+                  amazonLink={'https://leanpub.com/cqrs-by-example'}>
+                <p>To me Carlos Buenosvinos is a way more valid reference than codelitv - probably because people
+                that follow codelytv courses become narrow minded zealots.</p>
+                <p>I still go very often to the previous book DDD in PHP and I feel it will be the same with this one.</p>
             </Book>
+
 
 
             
@@ -152,6 +151,22 @@ export default function BookContent() {
                     are kind of counterintuitive. And the other problem is that again it's me who's reading this book, and not
                     any CXX nor directory in my organization. And I can't be the one complaining all the time.</p>
                 <p>The reason upgrading my web page is so easy is because I follow the advice on this book.</p>
+            </Book>
+
+            <Book title={'Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation (Addison-Wesley Signature Series (Fowler))'} author={'Jez Humble David Farley'}
+                  amazonLink={'https://www.amazon.com/gp/product/B003YMNVC0'}>
+                <p>I shouldn't have waited that long to read this book. Just the first chapter already helped
+                    me realize many things I was doing wrong! I would have written way less <a  target="_blank" rel="noreferrer" href="https://blog.cesc.cool/self-hosted-infrastructure-on-aws-with-terraform-part4">
+                        on this blog post</a> if it wasn't for this book.</p>
+                <p>This book is one of the BIG ones. Like building microservices, or the devops handbook. The intention the authors
+                want to convey is priceless.</p>
+                <p>Of course it's not perfect, especially because it's from 2010 and I'd say they would explain things
+                in a very different way now with Docker around and being a standard in the industry. Still, it doens't really
+                matter much, since it's one of those books that try not to cling into any technology, and gives you help doesn't matter
+                your technology stack.</p>
+                <p>Summing up this book, I'd would say the subtitle is "how to be a good QA", but a good one. I've worked with
+                many QA that most just go against lean principles. The same way I've met many DevOps that go against lean principles.
+                Oxymoron people.</p>
             </Book>
 
             <Book title={'Terraform Up and Running'} author={'Yevgeniy Brikman'} amazonLink={'https://www.oreilly.com/library/view/terraform-up/9781492046899/'}>
