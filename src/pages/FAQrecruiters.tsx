@@ -8,10 +8,32 @@ export default function FAQRecruitersPage() {
     return (
         <div>
             <MainContentTitle title={'F.A.Q. for hiring companies:'} />
-            <p>First of all, I am tired of technical challenges, so if you are really interested in me, please go
-                and <a href={'/' + CODE_REPOS}>where my work is available for your scrutiny.</a></p>
             <p>Often recruiters ask me the same exact things so they can somehow "profile me". Let me try to summarize
                 what I am looking for in a company, so you can properly "profile" me:</p>
+            <h5>Technical challenges</h5>
+            <p>Please go to <a href={'/' + CODE_REPOS}>where my work is available for your scrutiny.</a></p>
+            <p>There is some good stuff and bad stuff, the more recent the better, but still is not perfect, because
+            projects are fluid and dynamic. Also all the technical challenges I did are there too, so you can choose.</p>
+            <p>I will not do a technical challenge for your entertainment though -unless I really really want to work with
+            you. It's a waste of time for you and especially for me. Technical challenges are
+                nothing more of -pardon this expression- a dick measuring contest. Testing hard skills
+            at this level has really no sense. And the most absurd thing of it all is that hard skills are easily learnable,
+            as opposite as soft skill, where it might require a radical change of personality more often than not impossible
+            to achieve.</p>
+            <p>So if you are afraid that a person won't be able to learn hard skills, here's my alternative: a trial period
+                of 1 month, and after a month, make some kind of "exam" where you ask stuff related only and only about your company.
+                The technical debt and the challenges there, and whether I -or any candidate- understand how does it all work.
+            That person has been working some years in the industry should be indication enough that this person will be able
+            to learn the hard skills.</p>
+            <p>Maybe you are looking for somebody with more experience than anybody in the company, somebody
+            to learn from. In that case it means that you are open minded enough, but still it doesn't justify a technical
+            challenge, instead it should be technical and comfortable talk. If I want to bring such a person in my team,
+            what use would it be that I correct the technical challenge and I don't understand the patterns there?</p>
+            <p>Something like that happened to me in my last technical challenge. The correctors could not identify that
+            I was using hexagonal architecture (maybe because I expressed several times in the readme that I was doing it with CQRS architecture,
+            I just assumed that everybody would know this is build on top of hexagonal architecture, and well, once you see
+            the directory structure, there's no way to miss it... unless you don't know what's hexagonal architecture and
+            never seen it...)</p>
             <h5>Impact</h5>
             <p>On the <a href={'/' + BOOKS}>DevOps Handbook</a>, and also on <a href={'/' + BOOKS}>
                 Building Microservices</a> books it is explained how useful/profitable/great
@@ -67,15 +89,14 @@ export default function FAQRecruitersPage() {
             <p>Finally, since the job I will do will probably be in PHP because it is the only language that I feel
                 I can justify a senior salary, at least that it follows some "latest" trends: hexagonal architecture,
                 event sourcing CQRS, all of this is welcome. Code splitted in bounded contexts instead of a huge Monolith, etc
-                (but a caution word here, codilytv zealots and other people
-                that never read a book in English think there's only one way of being right here,
-                it is very easy to find the egos and the toxic behaviours
-                on this aspect, let's not fall into this trap and keep an open mind, shall we?).</p>
+                (but a caution word here, for zealots and other people
+                that never read a book in English and think there's only one way of being right here,
+                let's not fall into this trap and keep an open mind, shall we?).</p>
             <h5>Language</h5>
             <p> I am based in Spain and I speak Spanish, obviously, but for work I feel way more comfortable speaking
                 in English. A big reason is that I believe all of the toxic behaviours go down a level when people are
-                forced to use a a non-native language. And if it is, well, it's not native to me, so I might miss all
-                the toxic nuances that one might say when using English, so it's all for the best in any case.</p>
+                forced to use a a non-native language. Struggling people will put more intention on the message
+                and in work related topics making them more professional, which I enjoy.</p>
             <p>When I reason and discuss and try to find solution, I normally quote the books or use the same reasoning,
                 those books are written in English, and somehow I think I do a terrible job translating the intentions
                 written there to Spanish. Maybe I'd do a better job translating to Catalan.</p>
@@ -88,7 +109,7 @@ export default function FAQRecruitersPage() {
                 but of course this day will be about meetings, talking to each other, team building, and doing little
                 work. Maybe some pair programming.</p>
             <p>I complete all the tasks that I am assigned on time always. There's no need to go to the office to prove
-                that. To go a share a bathroom, to argue about the temperature of the office, and to commute (really,
+                that. To go and share a bathroom, to argue about the temperature of the office, and to commute (really,
                 commuting feels so absurd at this time and age).</p>
             <h5>Career trajectory</h5>
             <p>This is mainly for the long term. But I won't stay in a company in which I don't see myself in the future.

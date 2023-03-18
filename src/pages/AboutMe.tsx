@@ -16,7 +16,7 @@ export default function AboutMe() {
 
             <h4>Long story</h4>
             <p>I am an engineer - graduated on "informatics" which is computer science, but it is not computer science
-                as probably it is on USA, but anyway I graduated long time ago so that doesn't matter that much anymore</p>
+                as probably it is on the USA, but anyway I graduated long time ago so that doesn't matter that much anymore.</p>
             <p> I've been born and raised in Barcelona but my professional experience -without counting a long internship-
                 started in Japan where I lived almost 5 years</p>
             <p> Now, though, it's been almost the same amount of time in Barcelona already, again.</p>

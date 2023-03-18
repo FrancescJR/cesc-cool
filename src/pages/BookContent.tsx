@@ -24,13 +24,17 @@ export default function BookContent() {
             <p>You can consider this list of books part of my education. This list is growing and growing!</p>
             
             <h5>Currently Reading</h5>
-            <Book title={'CQRS by Example'} author={'Carlos buenosvinos, Christian Soronellas, Keyvan Akbary'}
-                  amazonLink={'https://leanpub.com/cqrs-by-example'}>
-                <p>To me Carlos Buenosvinos is a way more valid reference than codelitv - probably because people
-                that follow codelytv courses become narrow minded zealots.</p>
-                <p>I still go very often to the previous book DDD in PHP and I feel it will be the same with this one.</p>
+            <Book title={'Grokking Simplicity: Taming complex software with functional thinking'}
+                  author={'Eric Normand'}
+                  amazonLink={'https://www.amazon.com/gp/product/B09781TWFL/ref=kinw_myk_ro_title'}
+            ><p>
+                About to finish this one, in general I found it very amenable and sometimes eye opening.
+                There are a couple of things (he killed DDD with his explanation of data driven development and
+                because the whole book in general is overly simplistic and unrealistic, not really practical to the
+                real world, it's up to the "senior" developers to take the valid advice and apply it properly, but
+                I am afraid for the juniors, which is the target audience this book seems to have!).
+            </p>
             </Book>
-
 
 
             
@@ -80,6 +84,20 @@ export default function BookContent() {
                     about that and also open repos to check.</p>
             </Book>
 
+            <Book title={'CQRS by Example'} author={'Carlos buenosvinos, Christian Soronellas, Keyvan Akbary'}
+                  amazonLink={'https://leanpub.com/cqrs-by-example'}>
+                <p>Awesome book, as I predicted, I go back very often to this book, especially since I am building
+                    stuff with CQRS arquitecture</p>
+                <p>The only missing thing is a chapter about deploying to production. There's stuff I don't like
+                at all, but it's all about infrastructure concerns. I'd love to see the pros and cons of many ways
+                of deploying a CQRS service to production with a queue system. I have my own experience on that
+                but one of the main reasons I read books is to know the experience of other people that are, well,
+                way more experienced and have seen way mroe ways. So that was just a think I missed in the book.</p>
+                <p>Still, really good advice and a very recommendable book!</p>
+                <p>I h</p>
+            </Book>
+
+
             <Book title={'Practical Microservices: Build Event-Driven Architectures with Event Sourcing and CQRS'}
                   author={'Ethan Garofolo'} amazonLink={'https://www.amazon.com/gp/product/B0899K5R4P/ref=kinw_myk_ro_title'}>
                 <p>Well that was more interesting than I thought it would be. I would recommend it to give it a try.</p>
@@ -106,6 +124,7 @@ export default function BookContent() {
                 me wonder a lot; is the projection the view data or the reconstruction of the aggregate? It quite often
                 could mean both, which confused me quite a big deal!</p>
             </Book>
+
 
             <h5>Big Picture (DevOps culture)</h5>
             <Book title={'Building microservices'} author={'Sam Newman'} amazonLink={'https://www.amazon.com/gp/product/B09B5L4NVT'}>
@@ -245,12 +264,6 @@ export default function BookContent() {
                     <Book title={'Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations'}
                           author={'Nicole Forsgreen, Jez Humble, Gene Kim'}
                           amazonLink={'https://www.amazon.com/gp/product/B07B9F83WM'}
-                    />
-                </li>
-                <li>
-                    <Book title={'CQRS by example'}
-                          author={'Carlos Buenosvinos, Christian Soronellas, Keyvan Akbary'}
-                          amazonLink={'https://leanpub.com/cqrs-by-example'}
                     />
                 </li>
                 <li>
