@@ -6,8 +6,6 @@ on:
 jobs:
   deploy-production:
     runs-on: ubuntu-latest
-    env:
-      NODE_OPTIONS: --openssl-legacy-provider
     steps:
       - id: EniltrexAction
         uses: eniltrexAdmin/deploy-static-aws-cf-s3-site-action@v1.0.1

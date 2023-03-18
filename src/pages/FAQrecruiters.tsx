@@ -12,6 +12,7 @@ export default function FAQRecruitersPage() {
                 what I am looking for in a company, so you can properly "profile" me:</p>
             <h5>Technical challenges</h5>
             <p>Please go to <a href={'/' + CODE_REPOS}>where my work is available for your scrutiny.</a></p>
+            <p>Please go to <a href="https://blog.cesc.cool/">my blog</a> where I speak a lot about code, also for you scrutiny.</p>
             <p>There is some good stuff and bad stuff, the more recent the better, but still is not perfect, because
             projects are fluid and dynamic. Also all the technical challenges I did are there too, so you can choose.</p>
             <p>I will not do a technical challenge for your entertainment though -unless I really really want to work with
