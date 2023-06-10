@@ -93,7 +93,6 @@ export default function BookContent() {
                 but one of the main reasons I read books is to know the experience of other people that are, well,
                 way more experienced and have seen way mroe ways. So that was just a think I missed in the book.</p>
                 <p>Still, really good advice and a very recommendable book!</p>
-                <p>I h</p>
             </Book>
 
 
@@ -126,7 +125,7 @@ export default function BookContent() {
 
             <Book title={'Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#'}
                   author={'Scott Wlaschin'} amazonLink={'https://www.amazon.com/gp/product/B07B44BPFB'}>
-                <p>I am really glad I read this book. Basically all I have to say I've written in my bloc post here:
+                <p>I am really glad I read this book. Basically all I have to say I've written in my blog post here:
                     <a target="_blank" rel="noreferrer" href="https://blog.cesc.cool/my-take-on-functional-programming">
                         https://blog.cesc.cool/my-take-on-functional-programming
                     </a></p>
