@@ -24,15 +24,14 @@ export default function BookContent() {
             <p>You can consider this list of books part of my education. This list is growing and growing!</p>
             
             <h5>Currently Reading</h5>
-            <Book title={'Grokking Simplicity: Taming complex software with functional thinking'}
-                  author={'Eric Normand'}
-                  amazonLink={'https://www.amazon.com/gp/product/B09781TWFL/ref=kinw_myk_ro_title'}
+            <Book title={'The Staff Engineer\'s Path'}
+                  author={'Tanya Relly'}
+                  amazonLink={'https://www.amazon.com/gp/product/B0BG16Y553'}
             ><p>
-                About to finish this one, in general I found it very amenable and sometimes eye opening.
-                There are a couple of things (he killed DDD with his explanation of data driven development and
-                because the whole book in general is overly simplistic and unrealistic, not really practical to the
-                real world, it's up to the "senior" developers to take the valid advice and apply it properly, but
-                I am afraid for the juniors, which is the target audience this book seems to have!).
+               Probably my path. I like way more the solitude and the tech than the people. Even though I like
+                wokking with people and it's a necessary evil, it looks like I am way more better at solving
+                technical problems - sometimes being the solution a communication personal problem- than managing
+                people.
             </p>
             </Book>
 
@@ -124,6 +123,16 @@ export default function BookContent() {
                 me wonder a lot; is the projection the view data or the reconstruction of the aggregate? It quite often
                 could mean both, which confused me quite a big deal!</p>
             </Book>
+
+            <Book title={'Domain Modeling Made Functional: Tackle Software Complexity with Domain-Driven Design and F#'}
+                  author={'Scott Wlaschin'} amazonLink={'https://www.amazon.com/gp/product/B07B44BPFB'}>
+                <p>I am really glad I read this book. Basically all I have to say I've written in my bloc post here:
+                    <a target="_blank" rel="noreferrer" href="https://blog.cesc.cool/my-take-on-functional-programming">
+                        https://blog.cesc.cool/my-take-on-functional-programming
+                    </a></p>
+            </Book>
+
+
 
 
             <h5>Big Picture (DevOps culture)</h5>
@@ -234,6 +243,25 @@ export default function BookContent() {
                 <p>I haven't yet read "the clean coder" though.</p>
             </Book>
 
+            <Book title={'Grokking Simplicity: Taming complex software with functional thinking'}
+                  author={'Eric Normand'}
+                  amazonLink={'https://www.amazon.com/gp/product/B09781TWFL/ref=kinw_myk_ro_title'}
+            ><p>
+                In general I found it very amenable and sometimes eye opening.
+                There are a couple of things (he killed DDD with his explanation of data driven development and
+                because the whole book in general is overly simplistic and unrealistic, not really practical to the
+                real world, it's up to the "senior" developers to take the valid advice and apply it properly, but
+                I am afraid for the juniors, which is the target audience this book seems to have!).
+            </p>
+                <p>
+                    I did this blog post explaining the best parts of this book:
+                    <a target="_blank" rel="noreferrer" href="https://blog.cesc.cool/my-take-on-functional-programming">
+                        https://blog.cesc.cool/my-take-on-functional-programming
+                    </a>
+                </p>
+            </Book>
+
+
             <Book title={'Zero To Production In Rust'} author={'Luca Palmieri'} amazonLink={'https://app.gumroad.com/d/40684410d99d242f75b4a96b2bc87835'}>
                 <p>This book helped me greatly by getting started with Rust way faster than anything else could have.
                 Maybe by having the author himself next to me.</p>
@@ -252,14 +280,38 @@ export default function BookContent() {
                     several problems like atomicity in transactions using transactions, idempotency and horizontal scalability using
                     data partition. All of this is in Kafka. All of this is also very confusing if you have never played with Kafka.</p>
             </Book>
+            <Book title={'OAuth 2.0: Getting Started in API Security (API-University Series Book 1)'}
+                  author={'Matthias Biehl'} amazonLink={'https://www.amazon.com/gp/product/B00PO2BJ4K'}>
+                <p>Not sure it was worth it. Some explanations of the processes, with diagrams. Explaining each bit
+                as i fit was a text book. But if you want to *understand* OAuth, better look somewhere else.
+                The book simply states that the process works like it works, without explaining why is that more or less
+                secure than the other processes, of the why behind that. It's only a slight improvement from the
+                official documentation.</p>
+            </Book>
 
-
+            <Book title={'What Is ChatGPT Doing ... and Why Does It Work?'}
+                  author={'Stephen Wolfram'} amazonLink={'https://www.amazon.com/gp/product/B0BY59PT5Z'}>
+                <p>This one is hardly technical, but neverthless I put it here. It's been interesting to remember
+                the neural networks from university times, and the scary realiation that not even their creators seem to
+                know how exactly it works so well. The reading was tough though, it is a very peculiar style of writing,
+                like a crazy scientist in a university class explaining his views to his imaginary educated audience.
+                 (without realizing all the students are on the lunch break).</p>
+            </Book>
 
 
             <h5>Waiting list</h5>
             <p>I have already purchased some books and some others are about to be. This is the list on the
                 order I am planning to read them:</p>
             <ol>
+                <li>
+                    <Book title={'API Security in Action'}
+                          author={'Neil Madden'}
+                          amazonLink={'https://www.amazon.com/gp/product/B097834K9W'}
+                    />
+                    <p>Eager about this one. I think I've seen so many times the term "security" thrown in discussion in
+                    order to justify spaghetti code. I want to make sure the term is being properly used.</p>
+                </li>
+
                 <li>
                     <Book title={'Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations'}
                           author={'Nicole Forsgreen, Jez Humble, Gene Kim'}
