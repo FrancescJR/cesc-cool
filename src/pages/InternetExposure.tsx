@@ -36,15 +36,8 @@ export default function InternetExposure() {
             <h4>Writing</h4>
             <p>You might have noticed that I like to write... a lot. Especially with my Thinkpad lenovo keyboard. Nothing
                 can be compared to the feeling your fingers get when you type on that keyboard.</p>
-            <p>The platform I use is blogger. I had many during the years. Right now I just write mainly for myself.
-            I switched Blogger for Penzu. Before I used to share my posts on Facebook and everywhere, but my Facebook
-            account is kind of inactive and I don't dare to show my deepest thoughts there. It's just my cowardice, because
-            those posts were written with an audience in mind. Let's say I have sometimes bursts of bravery, then I post publicly everywhere, and
-                on the following day my cowardice gains terrain and I put it all back to private again.</p>
-            <p>Well here you will find some of the posts, the few ones I dare to have public now. I have all the old ones
-                too but this time I haven't published them.</p>
-            <p>I just messed up this subdomain at moving the name servers from google to aws. Sorry...</p>
-            <p><a href={'http://economic.cesc.cool/'} target="_blank" rel="noreferrer" >http://economic.cesc.cool/</a></p>
+            <p>I used to write in different platforms but lately I am posting some articles in hashnode. This is my blog page:</p>
+            <p><a href={'https://blog.cesc.cool/'} target="_blank" rel="noreferrer" >https://blog.cesc.cool/</a></p>
 
             <p>I will probably write some books. One that I have a little bit unorganized but with chapters all over
                 Penzu will be about some bad coding practices that I've been seeing among the years. This book
